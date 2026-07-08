@@ -15,6 +15,9 @@ export default defineConfig({
   rules: {
     // Purely stylistic and fights semantically meaningful config/object ordering.
     "sort-keys": "off",
+    // Allow `function foo()` declarations (hoisting + cleaner generics) instead
+    // of forcing every helper into an arrow const.
+    "func-style": "off",
   },
   overrides: [
     {
