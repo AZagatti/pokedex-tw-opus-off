@@ -1,0 +1,17 @@
+# Git hooks — https://lefthook.dev
+pre-commit:
+  parallel: true
+  commands:
+    oxlint:
+      glob: "*.{js,ts,svelte}"
+      run: npx oxlint --config oxlint.config.ts {staged_files}
+    oxfmt:
+      glob: "*.{js,ts,svelte,json,css}"
+      run: npx oxfmt --config oxfmt.config.ts --check {staged_files}
+    typecheck:
+      run: npm run check
+
+pre-push:
+  commands:
+    test:
+      run: npm run test
