@@ -6,16 +6,9 @@
 
 **[🔴 Live demo → azagatti.github.io/pokedex-tw-opus-off](https://azagatti.github.io/pokedex-tw-opus-off/)**
 
-[![CI & Deploy](https://github.com/AZagatti/pokedex-tw-opus-off/actions/workflows/deploy.yml/badge.svg)](https://github.com/AZagatti/pokedex-tw-opus-off/actions/workflows/deploy.yml)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-brightgreen?logo=githubpages)](https://azagatti.github.io/pokedex-tw-opus-off/)
-[![Lighthouse](https://img.shields.io/badge/Lighthouse-100%20%C2%B7%20100%20%C2%B7%20100%20%C2%B7%20100-ff5e00?logo=lighthouse&logoColor=white)](#-performance--quality)
+[![CI & Deploy](https://github.com/AZagatti/pokedex-tw-opus-off/actions/workflows/deploy.yml/badge.svg)](https://github.com/AZagatti/pokedex-tw-opus-off/actions/workflows/deploy.yml) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-brightgreen?logo=githubpages)](https://azagatti.github.io/pokedex-tw-opus-off/) [![Lighthouse](https://img.shields.io/badge/Lighthouse-100%20%C2%B7%20100%20%C2%B7%20100%20%C2%B7%20100-ff5e00?logo=lighthouse&logoColor=white)](#-performance--quality)
 
-[![SvelteKit](https://img.shields.io/badge/SvelteKit-Svelte%205-ff3e00?logo=svelte&logoColor=white)](https://svelte.dev/docs/kit)
-[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38bdf8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-8-646cff?logo=vite&logoColor=white)](https://vite.dev/)
-[![zod](https://img.shields.io/badge/zod-validated-3e67b1?logo=zod&logoColor=white)](https://zod.dev/)
-[![oxlint](https://img.shields.io/badge/lint-oxlint%20%2B%20oxfmt-000000)](https://oxc.rs/)
+[![SvelteKit](https://img.shields.io/badge/SvelteKit-Svelte%205-ff3e00?logo=svelte&logoColor=white)](https://svelte.dev/docs/kit) [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38bdf8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/) [![Vite](https://img.shields.io/badge/Vite-8-646cff?logo=vite&logoColor=white)](https://vite.dev/) [![zod](https://img.shields.io/badge/zod-validated-3e67b1?logo=zod&logoColor=white)](https://zod.dev/) [![oxlint](https://img.shields.io/badge/lint-oxlint%20%2B%20oxfmt-000000)](https://oxc.rs/)
 
 </div>
 
@@ -78,11 +71,7 @@ npm run test         # vitest unit + Playwright e2e
 
 ## 🏗️ Architecture
 
-A static single-page app: the shell is prerendered, and everything renders
-client-side so dynamic routes work off GitHub Pages' `404.html` fallback. Data
-is fetched with native `fetch` inside a typed client, validated with zod, and
-memoized in a URL-keyed `Map` (with in-flight de-duplication so a 30-card page
-never fires the same request twice).
+A static single-page app: the shell is prerendered, and everything renders client-side so dynamic routes work off GitHub Pages' `404.html` fallback. Data is fetched with native `fetch` inside a typed client, validated with zod, and memoized in a URL-keyed `Map` (with in-flight de-duplication so a 30-card page never fires the same request twice).
 
 ```
 src/lib/
@@ -96,22 +85,18 @@ src/routes/
   berries/ · favorites/        berries index+detail, favorites grid
 ```
 
-See **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** for the data-flow, caching
-and routing details, and **[docs/DECISIONS.md](docs/DECISIONS.md)** for why each
-pinned choice was made.
+See **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** for the data-flow, caching and routing details, and **[docs/DECISIONS.md](docs/DECISIONS.md)** for why each pinned choice was made.
 
 ## 📊 Performance & quality
 
 Lighthouse (desktop, on the production build):
 
-| Performance | Accessibility | Best Practices | SEO |
-| :---: | :---: | :---: | :---: |
-| **100** | **100** | **100** | **100** |
+| Performance | Accessibility | Best Practices |   SEO   |
+| :---------: | :-----------: | :------------: | :-----: |
+|   **100**   |    **100**    |    **100**     | **100** |
 
-FCP ~0.5s · LCP ~0.7s · TBT 0ms · CLS 0. CI runs lint → format-check →
-typecheck → unit → e2e → build on every push before deploying to Pages.
+FCP ~0.5s · LCP ~0.7s · TBT 0ms · CLS 0. CI runs lint → format-check → typecheck → unit → e2e → build on every push before deploying to Pages.
 
 ## 🙏 Credits
 
-Data and sprites from the free [PokeAPI](https://pokeapi.co). Pokémon © Nintendo /
-Game Freak — this is a non-commercial fan project.
+Data and sprites from the free [PokeAPI](https://pokeapi.co). Pokémon © Nintendo / Game Freak — this is a non-commercial fan project.
