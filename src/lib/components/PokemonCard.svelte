@@ -111,12 +111,22 @@
     font-size: 1.02rem;
     font-weight: 700;
     letter-spacing: -0.01em;
+    line-height: 1.25;
+    /* Reserve a constant two-line block so long names never reflow the grid. */
+    min-height: 2.55rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .types {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.3rem;
+    min-height: 1.35rem;
+    overflow: hidden;
   }
 
   @media (prefers-reduced-motion: reduce) {

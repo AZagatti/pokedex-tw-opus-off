@@ -109,7 +109,7 @@
       type="button"
       class="sort"
       onclick={() => (sort = sort === "dex" ? "stat" : "dex")}
-      aria-label="Change sort order"
+      aria-label={`Sort by ${sort === "dex" ? "Dex №" : "Stat total"} — activate to change`}
       title="Toggle sort order"
     >
       <ArrowUpDown size={16} aria-hidden="true" />
@@ -286,7 +286,7 @@
     gap: 0.3rem;
     font-size: 0.82rem;
     font-weight: 600;
-    color: var(--accent);
+    color: var(--accent-ink);
     cursor: pointer;
     padding: 0.3rem 0.5rem;
     border-radius: 0.5rem;

@@ -487,7 +487,7 @@
     padding: 0.1rem 0.45rem;
     border-radius: 999px;
     background: color-mix(in srgb, var(--accent) 18%, transparent);
-    color: var(--accent);
+    color: var(--accent-ink);
   }
 
   .moves {

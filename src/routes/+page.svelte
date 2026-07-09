@@ -220,14 +220,25 @@
   </EmptyState>
 {:else}
   <div class="grid">
-    {#each displayed as pokemon, i (pokemon.id)}
-      <PokemonCard {pokemon} eager={i < 8} />
-    {/each}
-    {#each { length: skeletonCount } as _skeleton, i (`sk-${i}`)}
-      <CardSkeleton />
-    {/each}
     {#if bootLoading}
       {#each { length: PAGE_SIZE } as _boot, i (`boot-${i}`)}
+        <CardSkeleton />
+      {/each}
+    {:else if sort === "dex"}
+      <!-- Stable slot order: each cell is a skeleton until its detail loads,
+           then becomes a card in place — no reordering, so no layout shift. -->
+      {#each windowEntries as entry, i (entry.name)}
+        {#if details[entry.name]}
+          <PokemonCard pokemon={details[entry.name]} eager={i < 8} />
+        {:else}
+          <CardSkeleton />
+        {/if}
+      {/each}
+    {:else}
+      {#each displayed as pokemon, i (pokemon.id)}
+        <PokemonCard {pokemon} eager={i < 8} />
+      {/each}
+      {#each { length: skeletonCount } as _skeleton, i (`sk-${i}`)}
         <CardSkeleton />
       {/each}
     {/if}

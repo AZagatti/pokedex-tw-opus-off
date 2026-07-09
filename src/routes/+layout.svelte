@@ -1,6 +1,5 @@
 <script lang="ts">
   import "../app.css";
-  import favicon from "$lib/assets/favicon.svg";
   import Header from "$lib/components/Header.svelte";
   import { theme } from "$lib/stores/theme.svelte";
 
@@ -13,7 +12,6 @@
 </script>
 
 <svelte:head>
-  <link rel="icon" href={favicon} />
   <title>Pokédex — SvelteKit + PokeAPI</title>
 </svelte:head>
 

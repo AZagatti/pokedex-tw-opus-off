@@ -96,7 +96,7 @@
     text-decoration: none;
   }
   .brand b {
-    color: var(--accent);
+    color: var(--accent-ink);
     font-weight: 800;
   }
 
@@ -152,7 +152,7 @@
     }
   }
   .nav-link.active {
-    color: var(--accent);
+    color: var(--accent-ink);
     background: color-mix(in srgb, var(--accent) 12%, transparent);
   }
 

@@ -4,7 +4,9 @@
     <span class="skeleton dot"></span>
   </div>
   <span class="skeleton art"></span>
-  <span class="skeleton bar" style="width: 60%; height: 1rem;"></span>
+  <span class="name">
+    <span class="skeleton bar" style="width: 65%; height: 1rem;"></span>
+  </span>
   <div class="types">
     <span class="skeleton pillsk"></span>
     <span class="skeleton pillsk"></span>
@@ -12,25 +14,28 @@
 </div>
 
 <style>
+  /* Mirrors PokemonCard's box model exactly so the skeleton→card swap causes
+     no layout shift (padding, gap and each row's height must match). */
   .sk {
     display: flex;
     flex-direction: column;
-    gap: 0.55rem;
+    gap: 0.35rem;
     padding: 0.85rem;
   }
   .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 40px;
   }
   .bar {
-    height: 0.75rem;
+    height: 0.78rem;
     border-radius: 999px;
     display: block;
   }
   .dot {
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 40px;
+    height: 40px;
     border-radius: 999px;
   }
   .art {
@@ -38,11 +43,16 @@
     aspect-ratio: 1;
     border-radius: 0.9rem;
     display: block;
-    margin: 0.25rem 0;
+  }
+  .name {
+    min-height: 2.55rem;
+    display: flex;
+    align-items: flex-start;
   }
   .types {
     display: flex;
     gap: 0.3rem;
+    min-height: 1.35rem;
   }
   .pillsk {
     width: 3rem;
