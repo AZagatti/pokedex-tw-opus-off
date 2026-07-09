@@ -6,7 +6,9 @@ pre-commit:
       glob: "*.{js,ts,svelte}"
       run: npx oxlint --config oxlint.config.ts {staged_files}
     oxfmt:
-      glob: "*.{js,ts,svelte,json,css}"
+      # oxfmt formats JS/TS/JSON (not .svelte) — excluding svelte here avoids a
+      # spurious "no target file" error when a commit stages only .svelte files.
+      glob: "*.{js,ts,json,css}"
       run: npx oxfmt --config oxfmt.config.ts --check {staged_files}
     typecheck:
       run: npm run check
