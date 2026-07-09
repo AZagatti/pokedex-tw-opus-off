@@ -27,9 +27,24 @@ export function idFromUrl(url: string): number {
   return match?.groups ? Number(match.groups.id) : Number.NaN;
 }
 
+/**
+ * PokeAPI serves sprites from raw.githubusercontent.com, which rate-limits
+ * (HTTP 429) under bursty grid loads. Rewrite those URLs to the jsDelivr CDN
+ * mirror of the same repo — a real CDN with no throttling and faster delivery.
+ */
+export function toCdn(url: string | null | undefined): string {
+  if (!url) {
+    return "";
+  }
+  return url.replace(
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/",
+    "https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/"
+  );
+}
+
 /** Deterministic official-artwork URL from a dex id (no fetch required). */
 export function officialArtwork(id: number): string {
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
+  return `https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/other/official-artwork/${id}.png`;
 }
 
 export function listPokemon(

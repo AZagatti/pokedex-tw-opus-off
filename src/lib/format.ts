@@ -1,4 +1,4 @@
-import { officialArtwork } from "./api/client";
+import { officialArtwork, toCdn } from "./api/client";
 import type { Pokemon } from "./api/schemas";
 
 /** "1" -> "#0001" */
@@ -30,12 +30,11 @@ export function baseStatTotal(pokemon: Pokemon): number {
 
 /** Best available still image for a Pokémon, preferring official artwork. */
 export function bestSprite(pokemon: Pokemon): string {
-  return (
+  const url =
     pokemon.sprites.other?.["official-artwork"]?.front_default ??
     pokemon.sprites.other?.home?.front_default ??
-    pokemon.sprites.front_default ??
-    officialArtwork(pokemon.id)
-  );
+    pokemon.sprites.front_default;
+  return url ? toCdn(url) : officialArtwork(pokemon.id);
 }
 
 export interface SpriteVariant {
@@ -50,19 +49,15 @@ export function spriteVariants(pokemon: Pokemon): SpriteVariant[] {
     {
       key: "official",
       label: "Artwork",
-      url: pokemon.sprites.other?.["official-artwork"]?.front_default ?? "",
+      url: toCdn(pokemon.sprites.other?.["official-artwork"]?.front_default),
     },
-    { key: "front", label: "Front", url: pokemon.sprites.front_default ?? "" },
-    { key: "back", label: "Back", url: pokemon.sprites.back_default ?? "" },
-    {
-      key: "shiny",
-      label: "Shiny",
-      url: pokemon.sprites.front_shiny ?? "",
-    },
+    { key: "front", label: "Front", url: toCdn(pokemon.sprites.front_default) },
+    { key: "back", label: "Back", url: toCdn(pokemon.sprites.back_default) },
+    { key: "shiny", label: "Shiny", url: toCdn(pokemon.sprites.front_shiny) },
     {
       key: "shiny-back",
       label: "Shiny back",
-      url: pokemon.sprites.back_shiny ?? "",
+      url: toCdn(pokemon.sprites.back_shiny),
     },
   ];
   return candidates.filter((c) => c.url.length > 0);

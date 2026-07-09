@@ -19,7 +19,7 @@
     "test": "npm run test:unit && npm run test:e2e"
   },
   "dependencies": {
-    "lucide-svelte": "^1.0.1",
+    "@lucide/svelte": "^1.23.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {

@@ -1,0 +1,379 @@
+- generic [ref=f2e3]:
+    - banner [ref=f2e4]:
+        - generic [ref=f2e5]:
+            - link "Pokédex home" [ref=f2e6] [cursor=pointer]:
+                - /url: /
+                - generic [ref=f2e8]: Pokédex
+            - navigation "Primary" [ref=f2e9]:
+                - list [ref=f2e10]:
+                    - listitem [ref=f2e11]:
+                        - link "Pokédex" [ref=f2e12] [cursor=pointer]:
+                            - /url: /
+                            - img [ref=f2e13]
+                            - generic [ref=f2e14]: Pokédex
+                    - listitem [ref=f2e15]:
+                        - link "Berries" [ref=f2e16] [cursor=pointer]:
+                            - /url: /berries
+                            - img [ref=f2e17]
+                            - generic [ref=f2e18]: Berries
+                    - listitem [ref=f2e19]:
+                        - link "Favorites 1" [ref=f2e538] [cursor=pointer]:
+                            - /url: /favorites
+                            - img [ref=f2e21]
+                            - generic [ref=f2e22]: Favorites
+                            - generic [ref=f2e539]: "1"
+            - button "Toggle color theme" [ref=f2e23] [cursor=pointer]:
+                - img [ref=f2e537]
+    - main [ref=f2e25]:
+        - generic [ref=f2e26]:
+            - heading "Pokédex" [level=1] [ref=f2e27]
+            - paragraph [ref=f2e28]: Every Pokémon, searchable and filterable — powered by the PokeAPI, built with SvelteKit.
+        - generic [ref=f2e29]:
+            - generic [ref=f2e30]:
+                - generic [ref=f2e31]:
+                    - img [ref=f2e32]
+                    - searchbox "Search Pokémon by name" [ref=f2e33]
+                - generic [ref=f2e34]:
+                    - generic [ref=f2e35]: Filter by generation
+                    - combobox "Filter by generation" [active] [ref=f2e36] [cursor=pointer]:
+                        - option "All gens"
+                        - option "Gen I · Kanto" [selected]
+                        - option "Gen II · Johto"
+                        - option "Gen III · Hoenn"
+                        - option "Gen IV · Sinnoh"
+                        - option "Gen V · Unova"
+                        - option "Gen VI · Kalos"
+                        - option "Gen VII · Alola"
+                        - option "Gen VIII · Galar"
+                        - option "Gen IX · Paldea"
+                - button "Change sort order" [ref=f2e37] [cursor=pointer]:
+                    - img [ref=f2e38]
+                    - generic [ref=f2e39]: Dex №
+            - group "Filter by type" [ref=f2e40]:
+                - button "normal" [ref=f2e41] [cursor=pointer]
+                - button "fire" [pressed] [ref=f2e42] [cursor=pointer]
+                - button "water" [ref=f2e43] [cursor=pointer]
+                - button "electric" [ref=f2e44] [cursor=pointer]
+                - button "grass" [ref=f2e45] [cursor=pointer]
+                - button "ice" [ref=f2e46] [cursor=pointer]
+                - button "fighting" [ref=f2e47] [cursor=pointer]
+                - button "poison" [ref=f2e48] [cursor=pointer]
+                - button "ground" [ref=f2e49] [cursor=pointer]
+                - button "flying" [ref=f2e50] [cursor=pointer]
+                - button "psychic" [ref=f2e51] [cursor=pointer]
+                - button "bug" [ref=f2e52] [cursor=pointer]
+                - button "rock" [ref=f2e53] [cursor=pointer]
+                - button "ghost" [ref=f2e54] [cursor=pointer]
+                - button "dragon" [ref=f2e55] [cursor=pointer]
+                - button "dark" [ref=f2e56] [cursor=pointer]
+                - button "steel" [ref=f2e57] [cursor=pointer]
+                - button "fairy" [ref=f2e58] [cursor=pointer]
+            - generic [ref=f2e59]:
+                - generic [ref=f2e60]: 109 Pokémon of 1351
+                - button "Clear filters" [ref=f2e879] [cursor=pointer]:
+                    - img [ref=f2e880]
+                    - text: Clear filters
+        - generic [ref=f2e61]:
+            - link "#0004 Remove Charmander from favorites Charmander Charmander fire" [ref=f2e540] [cursor=pointer]:
+                - /url: /pokemon/charmander
+                - generic [ref=f2e103]:
+                    - generic [ref=f2e104]: "#0004"
+                    - button "Remove Charmander from favorites" [pressed] [ref=f2e541]:
+                        - img [ref=f2e106]
+                - img "Charmander" [ref=f2e109]
+                - heading "Charmander" [level=3] [ref=f2e110]
+                - generic [ref=f2e112]: fire
+            - link "#0005 Add Charmeleon to favorites Charmeleon Charmeleon fire" [ref=f2e113] [cursor=pointer]:
+                - /url: /pokemon/charmeleon
+                - generic [ref=f2e115]:
+                    - generic [ref=f2e116]: "#0005"
+                    - button "Add Charmeleon to favorites" [ref=f2e117]:
+                        - img [ref=f2e118]
+                - img "Charmeleon" [ref=f2e121]
+                - heading "Charmeleon" [level=3] [ref=f2e122]
+                - generic [ref=f2e124]: fire
+            - link "#0006 Add Charizard to favorites Charizard Charizard fire flying" [ref=f2e125] [cursor=pointer]:
+                - /url: /pokemon/charizard
+                - generic [ref=f2e127]:
+                    - generic [ref=f2e128]: "#0006"
+                    - button "Add Charizard to favorites" [ref=f2e129]:
+                        - img [ref=f2e130]
+                - img "Charizard" [ref=f2e133]
+                - heading "Charizard" [level=3] [ref=f2e134]
+                - generic [ref=f2e135]:
+                    - generic [ref=f2e136]: fire
+                    - generic [ref=f2e137]: flying
+            - link "#0037 Add Vulpix to favorites Vulpix Vulpix fire" [ref=f2e881] [cursor=pointer]:
+                - /url: /pokemon/vulpix
+                - generic [ref=f2e883]:
+                    - generic [ref=f2e884]: "#0037"
+                    - button "Add Vulpix to favorites" [ref=f2e885]:
+                        - img [ref=f2e886]
+                - img "Vulpix" [ref=f2e889]
+                - heading "Vulpix" [level=3] [ref=f2e890]
+                - generic [ref=f2e892]: fire
+            - link "#0038 Add Ninetales to favorites Ninetales Ninetales fire" [ref=f2e893] [cursor=pointer]:
+                - /url: /pokemon/ninetales
+                - generic [ref=f2e895]:
+                    - generic [ref=f2e896]: "#0038"
+                    - button "Add Ninetales to favorites" [ref=f2e897]:
+                        - img [ref=f2e898]
+                - img "Ninetales" [ref=f2e901]
+                - heading "Ninetales" [level=3] [ref=f2e902]
+                - generic [ref=f2e904]: fire
+            - link "#0058 Add Growlithe to favorites Growlithe Growlithe fire" [ref=f2e905] [cursor=pointer]:
+                - /url: /pokemon/growlithe
+                - generic [ref=f2e907]:
+                    - generic [ref=f2e908]: "#0058"
+                    - button "Add Growlithe to favorites" [ref=f2e909]:
+                        - img [ref=f2e910]
+                - img "Growlithe" [ref=f2e913]
+                - heading "Growlithe" [level=3] [ref=f2e914]
+                - generic [ref=f2e916]: fire
+            - link "#0059 Add Arcanine to favorites Arcanine Arcanine fire" [ref=f2e917] [cursor=pointer]:
+                - /url: /pokemon/arcanine
+                - generic [ref=f2e919]:
+                    - generic [ref=f2e920]: "#0059"
+                    - button "Add Arcanine to favorites" [ref=f2e921]:
+                        - img [ref=f2e922]
+                - img "Arcanine" [ref=f2e925]
+                - heading "Arcanine" [level=3] [ref=f2e926]
+                - generic [ref=f2e928]: fire
+            - link "#0077 Add Ponyta to favorites Ponyta Ponyta fire" [ref=f2e929] [cursor=pointer]:
+                - /url: /pokemon/ponyta
+                - generic [ref=f2e931]:
+                    - generic [ref=f2e932]: "#0077"
+                    - button "Add Ponyta to favorites" [ref=f2e933]:
+                        - img [ref=f2e934]
+                - img "Ponyta" [ref=f2e937]
+                - heading "Ponyta" [level=3] [ref=f2e938]
+                - generic [ref=f2e940]: fire
+            - link "#0078 Add Rapidash to favorites Rapidash Rapidash fire" [ref=f2e941] [cursor=pointer]:
+                - /url: /pokemon/rapidash
+                - generic [ref=f2e943]:
+                    - generic [ref=f2e944]: "#0078"
+                    - button "Add Rapidash to favorites" [ref=f2e945]:
+                        - img [ref=f2e946]
+                - img "Rapidash" [ref=f2e949]
+                - heading "Rapidash" [level=3] [ref=f2e950]
+                - generic [ref=f2e952]: fire
+            - link "#0126 Add Magmar to favorites Magmar Magmar fire" [ref=f2e953] [cursor=pointer]:
+                - /url: /pokemon/magmar
+                - generic [ref=f2e955]:
+                    - generic [ref=f2e956]: "#0126"
+                    - button "Add Magmar to favorites" [ref=f2e957]:
+                        - img [ref=f2e958]
+                - img "Magmar" [ref=f2e961]
+                - heading "Magmar" [level=3] [ref=f2e962]
+                - generic [ref=f2e964]: fire
+            - link "#0136 Add Flareon to favorites Flareon Flareon fire" [ref=f2e965] [cursor=pointer]:
+                - /url: /pokemon/flareon
+                - generic [ref=f2e967]:
+                    - generic [ref=f2e968]: "#0136"
+                    - button "Add Flareon to favorites" [ref=f2e969]:
+                        - img [ref=f2e970]
+                - img "Flareon" [ref=f2e973]
+                - heading "Flareon" [level=3] [ref=f2e974]
+                - generic [ref=f2e976]: fire
+            - link "#0146 Add Moltres to favorites Moltres Moltres fire flying" [ref=f2e977] [cursor=pointer]:
+                - /url: /pokemon/moltres
+                - generic [ref=f2e979]:
+                    - generic [ref=f2e980]: "#0146"
+                    - button "Add Moltres to favorites" [ref=f2e981]:
+                        - img [ref=f2e982]
+                - img "Moltres" [ref=f2e985]
+                - heading "Moltres" [level=3] [ref=f2e986]
+                - generic [ref=f2e987]:
+                    - generic [ref=f2e988]: fire
+                    - generic [ref=f2e989]: flying
+            - link "#0155 Add Cyndaquil to favorites Cyndaquil Cyndaquil fire" [ref=f2e990] [cursor=pointer]:
+                - /url: /pokemon/cyndaquil
+                - generic [ref=f2e992]:
+                    - generic [ref=f2e993]: "#0155"
+                    - button "Add Cyndaquil to favorites" [ref=f2e994]:
+                        - img [ref=f2e995]
+                - img "Cyndaquil" [ref=f2e998]
+                - heading "Cyndaquil" [level=3] [ref=f2e999]
+                - generic [ref=f2e1001]: fire
+            - link "#0156 Add Quilava to favorites Quilava Quilava fire" [ref=f2e1002] [cursor=pointer]:
+                - /url: /pokemon/quilava
+                - generic [ref=f2e1004]:
+                    - generic [ref=f2e1005]: "#0156"
+                    - button "Add Quilava to favorites" [ref=f2e1006]:
+                        - img [ref=f2e1007]
+                - img "Quilava" [ref=f2e1010]
+                - heading "Quilava" [level=3] [ref=f2e1011]
+                - generic [ref=f2e1013]: fire
+            - link "#0157 Add Typhlosion to favorites Typhlosion Typhlosion fire" [ref=f2e1014] [cursor=pointer]:
+                - /url: /pokemon/typhlosion
+                - generic [ref=f2e1016]:
+                    - generic [ref=f2e1017]: "#0157"
+                    - button "Add Typhlosion to favorites" [ref=f2e1018]:
+                        - img [ref=f2e1019]
+                - img "Typhlosion" [ref=f2e1022]
+                - heading "Typhlosion" [level=3] [ref=f2e1023]
+                - generic [ref=f2e1025]: fire
+            - link "#0218 Add Slugma to favorites Slugma Slugma fire" [ref=f2e1026] [cursor=pointer]:
+                - /url: /pokemon/slugma
+                - generic [ref=f2e1028]:
+                    - generic [ref=f2e1029]: "#0218"
+                    - button "Add Slugma to favorites" [ref=f2e1030]:
+                        - img [ref=f2e1031]
+                - img "Slugma" [ref=f2e1034]
+                - heading "Slugma" [level=3] [ref=f2e1035]
+                - generic [ref=f2e1037]: fire
+            - link "#0219 Add Magcargo to favorites Magcargo Magcargo fire rock" [ref=f2e1038] [cursor=pointer]:
+                - /url: /pokemon/magcargo
+                - generic [ref=f2e1040]:
+                    - generic [ref=f2e1041]: "#0219"
+                    - button "Add Magcargo to favorites" [ref=f2e1042]:
+                        - img [ref=f2e1043]
+                - img "Magcargo" [ref=f2e1046]
+                - heading "Magcargo" [level=3] [ref=f2e1047]
+                - generic [ref=f2e1048]:
+                    - generic [ref=f2e1049]: fire
+                    - generic [ref=f2e1050]: rock
+            - link "#0228 Add Houndour to favorites Houndour Houndour dark fire" [ref=f2e1051] [cursor=pointer]:
+                - /url: /pokemon/houndour
+                - generic [ref=f2e1053]:
+                    - generic [ref=f2e1054]: "#0228"
+                    - button "Add Houndour to favorites" [ref=f2e1055]:
+                        - img [ref=f2e1056]
+                - img "Houndour" [ref=f2e1059]
+                - heading "Houndour" [level=3] [ref=f2e1060]
+                - generic [ref=f2e1061]:
+                    - generic [ref=f2e1062]: dark
+                    - generic [ref=f2e1063]: fire
+            - link "#0229 Add Houndoom to favorites Houndoom Houndoom dark fire" [ref=f2e1064] [cursor=pointer]:
+                - /url: /pokemon/houndoom
+                - generic [ref=f2e1066]:
+                    - generic [ref=f2e1067]: "#0229"
+                    - button "Add Houndoom to favorites" [ref=f2e1068]:
+                        - img [ref=f2e1069]
+                - img "Houndoom" [ref=f2e1072]
+                - heading "Houndoom" [level=3] [ref=f2e1073]
+                - generic [ref=f2e1074]:
+                    - generic [ref=f2e1075]: dark
+                    - generic [ref=f2e1076]: fire
+            - link "#0240 Add Magby to favorites Magby Magby fire" [ref=f2e1077] [cursor=pointer]:
+                - /url: /pokemon/magby
+                - generic [ref=f2e1079]:
+                    - generic [ref=f2e1080]: "#0240"
+                    - button "Add Magby to favorites" [ref=f2e1081]:
+                        - img [ref=f2e1082]
+                - img "Magby" [ref=f2e1085]
+                - heading "Magby" [level=3] [ref=f2e1086]
+                - generic [ref=f2e1088]: fire
+            - link "#0244 Add Entei to favorites Entei Entei fire" [ref=f2e1089] [cursor=pointer]:
+                - /url: /pokemon/entei
+                - generic [ref=f2e1091]:
+                    - generic [ref=f2e1092]: "#0244"
+                    - button "Add Entei to favorites" [ref=f2e1093]:
+                        - img [ref=f2e1094]
+                - img "Entei" [ref=f2e1097]
+                - heading "Entei" [level=3] [ref=f2e1098]
+                - generic [ref=f2e1100]: fire
+            - link "#0250 Add Ho Oh to favorites Ho Oh Ho Oh fire flying" [ref=f2e1101] [cursor=pointer]:
+                - /url: /pokemon/ho-oh
+                - generic [ref=f2e1103]:
+                    - generic [ref=f2e1104]: "#0250"
+                    - button "Add Ho Oh to favorites" [ref=f2e1105]:
+                        - img [ref=f2e1106]
+                - img "Ho Oh" [ref=f2e1109]
+                - heading "Ho Oh" [level=3] [ref=f2e1110]
+                - generic [ref=f2e1111]:
+                    - generic [ref=f2e1112]: fire
+                    - generic [ref=f2e1113]: flying
+            - link "#0255 Add Torchic to favorites Torchic Torchic fire" [ref=f2e1114] [cursor=pointer]:
+                - /url: /pokemon/torchic
+                - generic [ref=f2e1116]:
+                    - generic [ref=f2e1117]: "#0255"
+                    - button "Add Torchic to favorites" [ref=f2e1118]:
+                        - img [ref=f2e1119]
+                - img "Torchic" [ref=f2e1122]
+                - heading "Torchic" [level=3] [ref=f2e1123]
+                - generic [ref=f2e1125]: fire
+            - link "#0256 Add Combusken to favorites Combusken Combusken fire fighting" [ref=f2e1126] [cursor=pointer]:
+                - /url: /pokemon/combusken
+                - generic [ref=f2e1128]:
+                    - generic [ref=f2e1129]: "#0256"
+                    - button "Add Combusken to favorites" [ref=f2e1130]:
+                        - img [ref=f2e1131]
+                - img "Combusken" [ref=f2e1134]
+                - heading "Combusken" [level=3] [ref=f2e1135]
+                - generic [ref=f2e1136]:
+                    - generic [ref=f2e1137]: fire
+                    - generic [ref=f2e1138]: fighting
+            - link "#0257 Add Blaziken to favorites Blaziken Blaziken fire fighting" [ref=f2e1139] [cursor=pointer]:
+                - /url: /pokemon/blaziken
+                - generic [ref=f2e1141]:
+                    - generic [ref=f2e1142]: "#0257"
+                    - button "Add Blaziken to favorites" [ref=f2e1143]:
+                        - img [ref=f2e1144]
+                - img "Blaziken" [ref=f2e1147]
+                - heading "Blaziken" [level=3] [ref=f2e1148]
+                - generic [ref=f2e1149]:
+                    - generic [ref=f2e1150]: fire
+                    - generic [ref=f2e1151]: fighting
+            - link "#0322 Add Numel to favorites Numel Numel fire ground" [ref=f2e1152] [cursor=pointer]:
+                - /url: /pokemon/numel
+                - generic [ref=f2e1154]:
+                    - generic [ref=f2e1155]: "#0322"
+                    - button "Add Numel to favorites" [ref=f2e1156]:
+                        - img [ref=f2e1157]
+                - img "Numel" [ref=f2e1160]
+                - heading "Numel" [level=3] [ref=f2e1161]
+                - generic [ref=f2e1162]:
+                    - generic [ref=f2e1163]: fire
+                    - generic [ref=f2e1164]: ground
+            - link "#0323 Add Camerupt to favorites Camerupt Camerupt fire ground" [ref=f2e1165] [cursor=pointer]:
+                - /url: /pokemon/camerupt
+                - generic [ref=f2e1167]:
+                    - generic [ref=f2e1168]: "#0323"
+                    - button "Add Camerupt to favorites" [ref=f2e1169]:
+                        - img [ref=f2e1170]
+                - img "Camerupt" [ref=f2e1173]
+                - heading "Camerupt" [level=3] [ref=f2e1174]
+                - generic [ref=f2e1175]:
+                    - generic [ref=f2e1176]: fire
+                    - generic [ref=f2e1177]: ground
+            - link "#0324 Add Torkoal to favorites Torkoal Torkoal fire" [ref=f2e1178] [cursor=pointer]:
+                - /url: /pokemon/torkoal
+                - generic [ref=f2e1180]:
+                    - generic [ref=f2e1181]: "#0324"
+                    - button "Add Torkoal to favorites" [ref=f2e1182]:
+                        - img [ref=f2e1183]
+                - img "Torkoal" [ref=f2e1186]
+                - heading "Torkoal" [level=3] [ref=f2e1187]
+                - generic [ref=f2e1189]: fire
+            - link "#0390 Add Chimchar to favorites Chimchar Chimchar fire" [ref=f2e1190] [cursor=pointer]:
+                - /url: /pokemon/chimchar
+                - generic [ref=f2e1192]:
+                    - generic [ref=f2e1193]: "#0390"
+                    - button "Add Chimchar to favorites" [ref=f2e1194]:
+                        - img [ref=f2e1195]
+                - img "Chimchar" [ref=f2e1198]
+                - heading "Chimchar" [level=3] [ref=f2e1199]
+                - generic [ref=f2e1201]: fire
+            - link "#0391 Add Monferno to favorites Monferno Monferno fire fighting" [ref=f2e1202] [cursor=pointer]:
+                - /url: /pokemon/monferno
+                - generic [ref=f2e1204]:
+                    - generic [ref=f2e1205]: "#0391"
+                    - button "Add Monferno to favorites" [ref=f2e1206]:
+                        - img [ref=f2e1207]
+                - img "Monferno" [ref=f2e1210]
+                - heading "Monferno" [level=3] [ref=f2e1211]
+                - generic [ref=f2e1212]:
+                    - generic [ref=f2e1213]: fire
+                    - generic [ref=f2e1214]: fighting
+    - contentinfo [ref=f2e436]:
+        - generic [ref=f2e437]:
+            - generic [ref=f2e438]:
+                - text: Data from
+                - link "PokeAPI" [ref=f2e439] [cursor=pointer]:
+                    - /url: https://pokeapi.co
+                - text: . Built with SvelteKit.
+            - link "View source on GitHub" [ref=f2e440] [cursor=pointer]:
+                - /url: https://github.com/AZagatti/pokedex-tw-opus-off
+                - img [ref=f2e441]
+                - text: Source

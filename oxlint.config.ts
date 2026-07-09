@@ -18,6 +18,11 @@ export default defineConfig({
     // Allow `function foo()` declarations (hoisting + cleaner generics) instead
     // of forcing every helper into an arrow const.
     "func-style": "off",
+    // `$effect` cleanup must be synchronous, so promise chains with a cancelled
+    // flag are the idiomatic async pattern inside effects — allow `.then()` and
+    // `.catch()` callbacks.
+    "prefer-await-to-then": "off",
+    "prefer-await-to-callbacks": "off",
   },
   overrides: [
     {
@@ -28,11 +33,12 @@ export default defineConfig({
       },
     },
     {
-      // Svelte 5 rune props idiom is `let { ... } = $props()`; oxlint parses only
-      // the <script> block generically and misreads props as never-reassigned.
+      // Svelte components are conventionally PascalCase; the rune props idiom is
+      // `let { ... } = $props()` which oxlint misreads as never-reassigned.
       files: ["**/*.svelte"],
       rules: {
         "prefer-const": "off",
+        "filename-case": "off",
       },
     },
   ],
