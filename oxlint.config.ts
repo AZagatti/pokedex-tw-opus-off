@@ -1,10 +1,13 @@
 import { defineConfig } from "oxlint";
 import core from "ultracite/oxlint/core";
 import svelte from "ultracite/oxlint/svelte";
-import vitest from "ultracite/oxlint/vitest";
 
 export default defineConfig({
-  extends: [core, svelte, vitest],
+  // NOTE: the `ultracite/oxlint/vitest` preset is intentionally omitted — its
+  // rules can't be scoped per-file and misfire on Playwright e2e specs (it
+  // demands importing vitest globals into @playwright/test files). Core + svelte
+  // still lint the test files.
+  extends: [core, svelte],
   ignorePatterns: [
     ...core.ignorePatterns,
     ".svelte-kit/**",
@@ -30,6 +33,14 @@ export default defineConfig({
       files: ["**/*.d.ts"],
       rules: {
         "require-module-specifiers": "off",
+      },
+    },
+    {
+      // Test matchers use plain regex literals (e.g. Playwright `getByRole`
+      // name patterns); the unicode-flag rule is noise there.
+      files: ["e2e/**/*.ts", "**/*.test.ts", "**/*.spec.ts"],
+      rules: {
+        "require-unicode-regexp": "off",
       },
     },
     {
