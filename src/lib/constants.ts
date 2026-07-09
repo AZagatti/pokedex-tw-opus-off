@@ -98,6 +98,19 @@ export const STAT_META: Record<string, { label: string; short: string }> = {
   speed: { label: "Speed", short: "SPE" },
 };
 
+/** Berry flavor → representative color. */
+export const FLAVOR_COLORS: Record<string, string> = {
+  spicy: "#e0484b",
+  dry: "#4c8bf5",
+  sweet: "#f06fb0",
+  bitter: "#57bd66",
+  sour: "#e0b93a",
+};
+
+export function flavorColor(flavor: string): string {
+  return FLAVOR_COLORS[flavor] ?? "#8a8f9e";
+}
+
 /** Highest single base stat in the games — used to scale stat bars (0–1). */
 export const MAX_BASE_STAT = 255;
 

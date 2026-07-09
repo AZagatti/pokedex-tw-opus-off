@@ -1,0 +1,685 @@
+- generic [ref=f22e3]:
+    - banner [ref=f22e4]:
+        - generic [ref=f22e5]:
+            - link "Pokédex home" [ref=f22e6] [cursor=pointer]:
+                - /url: /
+                - generic [ref=f22e8]: Pokédex
+            - navigation "Primary" [ref=f22e9]:
+                - list [ref=f22e10]:
+                    - listitem [ref=f22e11]:
+                        - link "Pokédex" [ref=f22e12] [cursor=pointer]:
+                            - /url: /
+                            - img [ref=f22e13]
+                            - generic [ref=f22e14]: Pokédex
+                    - listitem [ref=f22e15]:
+                        - link "Berries" [ref=f22e16] [cursor=pointer]:
+                            - /url: /berries
+                            - img [ref=f22e17]
+                            - generic [ref=f22e18]: Berries
+                    - listitem [ref=f22e19]:
+                        - link "Favorites 1" [ref=f22e20] [cursor=pointer]:
+                            - /url: /favorites
+                            - img [ref=f22e21]
+                            - generic [ref=f22e22]: Favorites
+                            - generic [ref=f22e23]: "1"
+            - button "Toggle color theme" [ref=f22e24] [cursor=pointer]:
+                - img [ref=f22e25]
+    - main [ref=f22e26]:
+        - generic [ref=f22e27]:
+            - heading "Berries" [level=1] [ref=f22e28]
+            - paragraph [ref=f22e29]: Firmness, flavors, growth time and size for every berry.
+        - generic [ref=f22e30]:
+            - img [ref=f22e31]
+            - searchbox "Search berries by name" [ref=f22e32]
+        - generic [ref=f22e33]:
+            - link "#0001 Soft Cheri Berry Cheri 🌱 3h 📏 20mm" [ref=f22e34] [cursor=pointer]:
+                - /url: /berries/cheri
+                - generic [ref=f22e35]:
+                    - generic [ref=f22e36]: "#0001"
+                    - generic [ref=f22e37]: Soft
+                - img "Cheri Berry" [ref=f22e40]
+                - heading "Cheri" [level=2] [ref=f22e41]
+                - paragraph [ref=f22e42]:
+                    - generic [ref=f22e43]: 🌱 3h
+                    - generic [ref=f22e44]: 📏 20mm
+            - link "#0002 Super Hard Chesto Berry Chesto 🌱 3h 📏 80mm" [ref=f22e45] [cursor=pointer]:
+                - /url: /berries/chesto
+                - generic [ref=f22e46]:
+                    - generic [ref=f22e47]: "#0002"
+                    - generic [ref=f22e48]: Super Hard
+                - img "Chesto Berry" [ref=f22e51]
+                - heading "Chesto" [level=2] [ref=f22e52]
+                - paragraph [ref=f22e53]:
+                    - generic [ref=f22e54]: 🌱 3h
+                    - generic [ref=f22e55]: 📏 80mm
+            - link "#0003 Very Soft Pecha Berry Pecha 🌱 3h 📏 40mm" [ref=f22e56] [cursor=pointer]:
+                - /url: /berries/pecha
+                - generic [ref=f22e57]:
+                    - generic [ref=f22e58]: "#0003"
+                    - generic [ref=f22e59]: Very Soft
+                - img "Pecha Berry" [ref=f22e62]
+                - heading "Pecha" [level=2] [ref=f22e63]
+                - paragraph [ref=f22e64]:
+                    - generic [ref=f22e65]: 🌱 3h
+                    - generic [ref=f22e66]: 📏 40mm
+            - link "#0004 Hard Rawst Berry Rawst 🌱 3h 📏 32mm" [ref=f22e67] [cursor=pointer]:
+                - /url: /berries/rawst
+                - generic [ref=f22e68]:
+                    - generic [ref=f22e69]: "#0004"
+                    - generic [ref=f22e70]: Hard
+                - img "Rawst Berry" [ref=f22e73]
+                - heading "Rawst" [level=2] [ref=f22e74]
+                - paragraph [ref=f22e75]:
+                    - generic [ref=f22e76]: 🌱 3h
+                    - generic [ref=f22e77]: 📏 32mm
+            - link "#0005 Super Hard Aspear Berry Aspear 🌱 3h 📏 50mm" [ref=f22e78] [cursor=pointer]:
+                - /url: /berries/aspear
+                - generic [ref=f22e79]:
+                    - generic [ref=f22e80]: "#0005"
+                    - generic [ref=f22e81]: Super Hard
+                - img "Aspear Berry" [ref=f22e84]
+                - heading "Aspear" [level=2] [ref=f22e85]
+                - paragraph [ref=f22e86]:
+                    - generic [ref=f22e87]: 🌱 3h
+                    - generic [ref=f22e88]: 📏 50mm
+            - link "#0006 Very Hard Leppa Berry Leppa 🌱 4h 📏 28mm" [ref=f22e89] [cursor=pointer]:
+                - /url: /berries/leppa
+                - generic [ref=f22e90]:
+                    - generic [ref=f22e91]: "#0006"
+                    - generic [ref=f22e92]: Very Hard
+                - img "Leppa Berry" [ref=f22e95]
+                - heading "Leppa" [level=2] [ref=f22e96]
+                - paragraph [ref=f22e97]:
+                    - generic [ref=f22e98]: 🌱 4h
+                    - generic [ref=f22e99]: 📏 28mm
+            - link "#0007 Super Hard Oran Berry Oran 🌱 4h 📏 35mm" [ref=f22e100] [cursor=pointer]:
+                - /url: /berries/oran
+                - generic [ref=f22e101]:
+                    - generic [ref=f22e102]: "#0007"
+                    - generic [ref=f22e103]: Super Hard
+                - img "Oran Berry" [ref=f22e106]
+                - heading "Oran" [level=2] [ref=f22e107]
+                - paragraph [ref=f22e108]:
+                    - generic [ref=f22e109]: 🌱 4h
+                    - generic [ref=f22e110]: 📏 35mm
+            - link "#0008 Hard Persim Berry Persim 🌱 4h 📏 47mm" [ref=f22e111] [cursor=pointer]:
+                - /url: /berries/persim
+                - generic [ref=f22e112]:
+                    - generic [ref=f22e113]: "#0008"
+                    - generic [ref=f22e114]: Hard
+                - img "Persim Berry" [ref=f22e117]
+                - heading "Persim" [level=2] [ref=f22e118]
+                - paragraph [ref=f22e119]:
+                    - generic [ref=f22e120]: 🌱 4h
+                    - generic [ref=f22e121]: 📏 47mm
+            - link "#0009 Super Hard Lum Berry Lum 🌱 12h 📏 34mm" [ref=f22e122] [cursor=pointer]:
+                - /url: /berries/lum
+                - generic [ref=f22e123]:
+                    - generic [ref=f22e124]: "#0009"
+                    - generic [ref=f22e125]: Super Hard
+                - img "Lum Berry" [ref=f22e128]
+                - heading "Lum" [level=2] [ref=f22e129]
+                - paragraph [ref=f22e130]:
+                    - generic [ref=f22e131]: 🌱 12h
+                    - generic [ref=f22e132]: 📏 34mm
+            - link "#0010 Very Hard Sitrus Berry Sitrus 🌱 8h 📏 95mm" [ref=f22e133] [cursor=pointer]:
+                - /url: /berries/sitrus
+                - generic [ref=f22e134]:
+                    - generic [ref=f22e135]: "#0010"
+                    - generic [ref=f22e136]: Very Hard
+                - img "Sitrus Berry" [ref=f22e139]
+                - heading "Sitrus" [level=2] [ref=f22e140]
+                - paragraph [ref=f22e141]:
+                    - generic [ref=f22e142]: 🌱 8h
+                    - generic [ref=f22e143]: 📏 95mm
+            - link "#0011 Soft Figy Berry Figy 🌱 5h 📏 100mm" [ref=f22e144] [cursor=pointer]:
+                - /url: /berries/figy
+                - generic [ref=f22e145]:
+                    - generic [ref=f22e146]: "#0011"
+                    - generic [ref=f22e147]: Soft
+                - img "Figy Berry" [ref=f22e150]
+                - heading "Figy" [level=2] [ref=f22e151]
+                - paragraph [ref=f22e152]:
+                    - generic [ref=f22e153]: 🌱 5h
+                    - generic [ref=f22e154]: 📏 100mm
+            - link "#0012 Hard Wiki Berry Wiki 🌱 5h 📏 115mm" [ref=f22e155] [cursor=pointer]:
+                - /url: /berries/wiki
+                - generic [ref=f22e156]:
+                    - generic [ref=f22e157]: "#0012"
+                    - generic [ref=f22e158]: Hard
+                - img "Wiki Berry" [ref=f22e162]
+                - heading "Wiki" [level=2] [ref=f22e163]
+                - paragraph [ref=f22e164]:
+                    - generic [ref=f22e165]: 🌱 5h
+                    - generic [ref=f22e166]: 📏 115mm
+            - link "#0013 Hard Mago Berry Mago 🌱 5h 📏 126mm" [ref=f22e167] [cursor=pointer]:
+                - /url: /berries/mago
+                - generic [ref=f22e168]:
+                    - generic [ref=f22e169]: "#0013"
+                    - generic [ref=f22e170]: Hard
+                - img "Mago Berry" [ref=f22e174]
+                - heading "Mago" [level=2] [ref=f22e175]
+                - paragraph [ref=f22e176]:
+                    - generic [ref=f22e177]: 🌱 5h
+                    - generic [ref=f22e178]: 📏 126mm
+            - link "#0014 Super Hard Aguav Berry Aguav 🌱 5h 📏 64mm" [ref=f22e179] [cursor=pointer]:
+                - /url: /berries/aguav
+                - generic [ref=f22e180]:
+                    - generic [ref=f22e181]: "#0014"
+                    - generic [ref=f22e182]: Super Hard
+                - img "Aguav Berry" [ref=f22e185]
+                - heading "Aguav" [level=2] [ref=f22e186]
+                - paragraph [ref=f22e187]:
+                    - generic [ref=f22e188]: 🌱 5h
+                    - generic [ref=f22e189]: 📏 64mm
+            - link "#0015 Soft Iapapa Berry Iapapa 🌱 5h 📏 223mm" [ref=f22e190] [cursor=pointer]:
+                - /url: /berries/iapapa
+                - generic [ref=f22e191]:
+                    - generic [ref=f22e192]: "#0015"
+                    - generic [ref=f22e193]: Soft
+                - img "Iapapa Berry" [ref=f22e196]
+                - heading "Iapapa" [level=2] [ref=f22e197]
+                - paragraph [ref=f22e198]:
+                    - generic [ref=f22e199]: 🌱 5h
+                    - generic [ref=f22e200]: 📏 223mm
+            - link "#0016 Very Hard Razz Berry Razz 🌱 2h 📏 120mm" [ref=f22e201] [cursor=pointer]:
+                - /url: /berries/razz
+                - generic [ref=f22e202]:
+                    - generic [ref=f22e203]: "#0016"
+                    - generic [ref=f22e204]: Very Hard
+                - img "Razz Berry" [ref=f22e207]
+                - heading "Razz" [level=2] [ref=f22e208]
+                - paragraph [ref=f22e209]:
+                    - generic [ref=f22e210]: 🌱 2h
+                    - generic [ref=f22e211]: 📏 120mm
+            - link "#0017 Soft Bluk Berry Bluk 🌱 2h 📏 108mm" [ref=f22e212] [cursor=pointer]:
+                - /url: /berries/bluk
+                - generic [ref=f22e213]:
+                    - generic [ref=f22e214]: "#0017"
+                    - generic [ref=f22e215]: Soft
+                - img "Bluk Berry" [ref=f22e218]
+                - heading "Bluk" [level=2] [ref=f22e219]
+                - paragraph [ref=f22e220]:
+                    - generic [ref=f22e221]: 🌱 2h
+                    - generic [ref=f22e222]: 📏 108mm
+            - link "#0018 Very Hard Nanab Berry Nanab 🌱 2h 📏 77mm" [ref=f22e223] [cursor=pointer]:
+                - /url: /berries/nanab
+                - generic [ref=f22e224]:
+                    - generic [ref=f22e225]: "#0018"
+                    - generic [ref=f22e226]: Very Hard
+                - img "Nanab Berry" [ref=f22e229]
+                - heading "Nanab" [level=2] [ref=f22e230]
+                - paragraph [ref=f22e231]:
+                    - generic [ref=f22e232]: 🌱 2h
+                    - generic [ref=f22e233]: 📏 77mm
+            - link "#0019 Super Hard Wepear Berry Wepear 🌱 2h 📏 74mm" [ref=f22e234] [cursor=pointer]:
+                - /url: /berries/wepear
+                - generic [ref=f22e235]:
+                    - generic [ref=f22e236]: "#0019"
+                    - generic [ref=f22e237]: Super Hard
+                - img "Wepear Berry" [ref=f22e240]
+                - heading "Wepear" [level=2] [ref=f22e241]
+                - paragraph [ref=f22e242]:
+                    - generic [ref=f22e243]: 🌱 2h
+                    - generic [ref=f22e244]: 📏 74mm
+            - link "#0020 Hard Pinap Berry Pinap 🌱 2h 📏 80mm" [ref=f22e245] [cursor=pointer]:
+                - /url: /berries/pinap
+                - generic [ref=f22e246]:
+                    - generic [ref=f22e247]: "#0020"
+                    - generic [ref=f22e248]: Hard
+                - img "Pinap Berry" [ref=f22e251]
+                - heading "Pinap" [level=2] [ref=f22e252]
+                - paragraph [ref=f22e253]:
+                    - generic [ref=f22e254]: 🌱 2h
+                    - generic [ref=f22e255]: 📏 80mm
+            - link "#0021 Very Hard Pomeg Berry Pomeg 🌱 8h 📏 135mm" [ref=f22e256] [cursor=pointer]:
+                - /url: /berries/pomeg
+                - generic [ref=f22e257]:
+                    - generic [ref=f22e258]: "#0021"
+                    - generic [ref=f22e259]: Very Hard
+                - img "Pomeg Berry" [ref=f22e263]
+                - heading "Pomeg" [level=2] [ref=f22e264]
+                - paragraph [ref=f22e265]:
+                    - generic [ref=f22e266]: 🌱 8h
+                    - generic [ref=f22e267]: 📏 135mm
+            - link "#0022 Hard Kelpsy Berry Kelpsy 🌱 8h 📏 150mm" [ref=f22e268] [cursor=pointer]:
+                - /url: /berries/kelpsy
+                - generic [ref=f22e269]:
+                    - generic [ref=f22e270]: "#0022"
+                    - generic [ref=f22e271]: Hard
+                - img "Kelpsy Berry" [ref=f22e274]
+                - heading "Kelpsy" [level=2] [ref=f22e275]
+                - paragraph [ref=f22e276]:
+                    - generic [ref=f22e277]: 🌱 8h
+                    - generic [ref=f22e278]: 📏 150mm
+            - link "#0023 Hard Qualot Berry Qualot 🌱 8h 📏 110mm" [ref=f22e279] [cursor=pointer]:
+                - /url: /berries/qualot
+                - generic [ref=f22e280]:
+                    - generic [ref=f22e281]: "#0023"
+                    - generic [ref=f22e282]: Hard
+                - img "Qualot Berry" [ref=f22e285]
+                - heading "Qualot" [level=2] [ref=f22e286]
+                - paragraph [ref=f22e287]:
+                    - generic [ref=f22e288]: 🌱 8h
+                    - generic [ref=f22e289]: 📏 110mm
+            - link "#0024 Hard Hondew Berry Hondew 🌱 8h 📏 162mm" [ref=f22e290] [cursor=pointer]:
+                - /url: /berries/hondew
+                - generic [ref=f22e291]:
+                    - generic [ref=f22e292]: "#0024"
+                    - generic [ref=f22e293]: Hard
+                - img "Hondew Berry" [ref=f22e296]
+                - heading "Hondew" [level=2] [ref=f22e297]
+                - paragraph [ref=f22e298]:
+                    - generic [ref=f22e299]: 🌱 8h
+                    - generic [ref=f22e300]: 📏 162mm
+            - link "#0025 Soft Grepa Berry Grepa 🌱 8h 📏 149mm" [ref=f22e301] [cursor=pointer]:
+                - /url: /berries/grepa
+                - generic [ref=f22e302]:
+                    - generic [ref=f22e303]: "#0025"
+                    - generic [ref=f22e304]: Soft
+                - img "Grepa Berry" [ref=f22e307]
+                - heading "Grepa" [level=2] [ref=f22e308]
+                - paragraph [ref=f22e309]:
+                    - generic [ref=f22e310]: 🌱 8h
+                    - generic [ref=f22e311]: 📏 149mm
+            - link "#0026 Soft Tamato Berry Tamato 🌱 8h 📏 200mm" [ref=f22e312] [cursor=pointer]:
+                - /url: /berries/tamato
+                - generic [ref=f22e313]:
+                    - generic [ref=f22e314]: "#0026"
+                    - generic [ref=f22e315]: Soft
+                - img "Tamato Berry" [ref=f22e318]
+                - heading "Tamato" [level=2] [ref=f22e319]
+                - paragraph [ref=f22e320]:
+                    - generic [ref=f22e321]: 🌱 8h
+                    - generic [ref=f22e322]: 📏 200mm
+            - link "#0027 Hard Cornn Berry Cornn 🌱 6h 📏 75mm" [ref=f22e323] [cursor=pointer]:
+                - /url: /berries/cornn
+                - generic [ref=f22e324]:
+                    - generic [ref=f22e325]: "#0027"
+                    - generic [ref=f22e326]: Hard
+                - img "Cornn Berry" [ref=f22e329]
+                - heading "Cornn" [level=2] [ref=f22e330]
+                - paragraph [ref=f22e331]:
+                    - generic [ref=f22e332]: 🌱 6h
+                    - generic [ref=f22e333]: 📏 75mm
+            - link "#0028 Hard Magost Berry Magost 🌱 6h 📏 140mm" [ref=f22e334] [cursor=pointer]:
+                - /url: /berries/magost
+                - generic [ref=f22e335]:
+                    - generic [ref=f22e336]: "#0028"
+                    - generic [ref=f22e337]: Hard
+                - img "Magost Berry" [ref=f22e340]
+                - heading "Magost" [level=2] [ref=f22e341]
+                - paragraph [ref=f22e342]:
+                    - generic [ref=f22e343]: 🌱 6h
+                    - generic [ref=f22e344]: 📏 140mm
+            - link "#0029 Soft Rabuta Berry Rabuta 🌱 6h 📏 226mm" [ref=f22e345] [cursor=pointer]:
+                - /url: /berries/rabuta
+                - generic [ref=f22e346]:
+                    - generic [ref=f22e347]: "#0029"
+                    - generic [ref=f22e348]: Soft
+                - img "Rabuta Berry" [ref=f22e351]
+                - heading "Rabuta" [level=2] [ref=f22e352]
+                - paragraph [ref=f22e353]:
+                    - generic [ref=f22e354]: 🌱 6h
+                    - generic [ref=f22e355]: 📏 226mm
+            - link "#0030 Super Hard Nomel Berry Nomel 🌱 6h 📏 285mm" [ref=f22e356] [cursor=pointer]:
+                - /url: /berries/nomel
+                - generic [ref=f22e357]:
+                    - generic [ref=f22e358]: "#0030"
+                    - generic [ref=f22e359]: Super Hard
+                - img "Nomel Berry" [ref=f22e362]
+                - heading "Nomel" [level=2] [ref=f22e363]
+                - paragraph [ref=f22e364]:
+                    - generic [ref=f22e365]: 🌱 6h
+                    - generic [ref=f22e366]: 📏 285mm
+            - link "#0031 Soft Spelon Berry Spelon 🌱 15h 📏 133mm" [ref=f22e367] [cursor=pointer]:
+                - /url: /berries/spelon
+                - generic [ref=f22e368]:
+                    - generic [ref=f22e369]: "#0031"
+                    - generic [ref=f22e370]: Soft
+                - img "Spelon Berry" [ref=f22e373]
+                - heading "Spelon" [level=2] [ref=f22e374]
+                - paragraph [ref=f22e375]:
+                    - generic [ref=f22e376]: 🌱 15h
+                    - generic [ref=f22e377]: 📏 133mm
+            - link "#0032 Very Soft Pamtre Berry Pamtre 🌱 15h 📏 244mm" [ref=f22e378] [cursor=pointer]:
+                - /url: /berries/pamtre
+                - generic [ref=f22e379]:
+                    - generic [ref=f22e380]: "#0032"
+                    - generic [ref=f22e381]: Very Soft
+                - img "Pamtre Berry" [ref=f22e384]
+                - heading "Pamtre" [level=2] [ref=f22e385]
+                - paragraph [ref=f22e386]:
+                    - generic [ref=f22e387]: 🌱 15h
+                    - generic [ref=f22e388]: 📏 244mm
+            - link "#0033 Soft Watmel Berry Watmel 🌱 15h 📏 250mm" [ref=f22e389] [cursor=pointer]:
+                - /url: /berries/watmel
+                - generic [ref=f22e390]:
+                    - generic [ref=f22e391]: "#0033"
+                    - generic [ref=f22e392]: Soft
+                - img "Watmel Berry" [ref=f22e395]
+                - heading "Watmel" [level=2] [ref=f22e396]
+                - paragraph [ref=f22e397]:
+                    - generic [ref=f22e398]: 🌱 15h
+                    - generic [ref=f22e399]: 📏 250mm
+            - link "#0034 Hard Durin Berry Durin 🌱 15h 📏 280mm" [ref=f22e400] [cursor=pointer]:
+                - /url: /berries/durin
+                - generic [ref=f22e401]:
+                    - generic [ref=f22e402]: "#0034"
+                    - generic [ref=f22e403]: Hard
+                - img "Durin Berry" [ref=f22e406]
+                - heading "Durin" [level=2] [ref=f22e407]
+                - paragraph [ref=f22e408]:
+                    - generic [ref=f22e409]: 🌱 15h
+                    - generic [ref=f22e410]: 📏 280mm
+            - link "#0035 Very Soft Belue Berry Belue 🌱 15h 📏 300mm" [ref=f22e411] [cursor=pointer]:
+                - /url: /berries/belue
+                - generic [ref=f22e412]:
+                    - generic [ref=f22e413]: "#0035"
+                    - generic [ref=f22e414]: Very Soft
+                - img "Belue Berry" [ref=f22e417]
+                - heading "Belue" [level=2] [ref=f22e418]
+                - paragraph [ref=f22e419]:
+                    - generic [ref=f22e420]: 🌱 15h
+                    - generic [ref=f22e421]: 📏 300mm
+            - link "#0036 Super Hard Occa Berry Occa 🌱 18h 📏 90mm" [ref=f22e422] [cursor=pointer]:
+                - /url: /berries/occa
+                - generic [ref=f22e423]:
+                    - generic [ref=f22e424]: "#0036"
+                    - generic [ref=f22e425]: Super Hard
+                - img "Occa Berry" [ref=f22e428]
+                - heading "Occa" [level=2] [ref=f22e429]
+                - paragraph [ref=f22e430]:
+                    - generic [ref=f22e431]: 🌱 18h
+                    - generic [ref=f22e432]: 📏 90mm
+            - link "#0037 Soft Passho Berry Passho 🌱 18h 📏 33mm" [ref=f22e433] [cursor=pointer]:
+                - /url: /berries/passho
+                - generic [ref=f22e434]:
+                    - generic [ref=f22e435]: "#0037"
+                    - generic [ref=f22e436]: Soft
+                - img "Passho Berry" [ref=f22e439]
+                - heading "Passho" [level=2] [ref=f22e440]
+                - paragraph [ref=f22e441]:
+                    - generic [ref=f22e442]: 🌱 18h
+                    - generic [ref=f22e443]: 📏 33mm
+            - link "#0038 Very Soft Wacan Berry Wacan 🌱 18h 📏 250mm" [ref=f22e444] [cursor=pointer]:
+                - /url: /berries/wacan
+                - generic [ref=f22e445]:
+                    - generic [ref=f22e446]: "#0038"
+                    - generic [ref=f22e447]: Very Soft
+                - img "Wacan Berry" [ref=f22e450]
+                - heading "Wacan" [level=2] [ref=f22e451]
+                - paragraph [ref=f22e452]:
+                    - generic [ref=f22e453]: 🌱 18h
+                    - generic [ref=f22e454]: 📏 250mm
+            - link "#0039 Soft Rindo Berry Rindo 🌱 18h 📏 156mm" [ref=f22e455] [cursor=pointer]:
+                - /url: /berries/rindo
+                - generic [ref=f22e456]:
+                    - generic [ref=f22e457]: "#0039"
+                    - generic [ref=f22e458]: Soft
+                - img "Rindo Berry" [ref=f22e461]
+                - heading "Rindo" [level=2] [ref=f22e462]
+                - paragraph [ref=f22e463]:
+                    - generic [ref=f22e464]: 🌱 18h
+                    - generic [ref=f22e465]: 📏 156mm
+            - link "#0040 Very Hard Yache Berry Yache 🌱 18h 📏 135mm" [ref=f22e466] [cursor=pointer]:
+                - /url: /berries/yache
+                - generic [ref=f22e467]:
+                    - generic [ref=f22e468]: "#0040"
+                    - generic [ref=f22e469]: Very Hard
+                - img "Yache Berry" [ref=f22e472]
+                - heading "Yache" [level=2] [ref=f22e473]
+                - paragraph [ref=f22e474]:
+                    - generic [ref=f22e475]: 🌱 18h
+                    - generic [ref=f22e476]: 📏 135mm
+            - link "#0041 Soft Chople Berry Chople 🌱 18h 📏 77mm" [ref=f22e477] [cursor=pointer]:
+                - /url: /berries/chople
+                - generic [ref=f22e478]:
+                    - generic [ref=f22e479]: "#0041"
+                    - generic [ref=f22e480]: Soft
+                - img "Chople Berry" [ref=f22e483]
+                - heading "Chople" [level=2] [ref=f22e484]
+                - paragraph [ref=f22e485]:
+                    - generic [ref=f22e486]: 🌱 18h
+                    - generic [ref=f22e487]: 📏 77mm
+            - link "#0042 Hard Kebia Berry Kebia 🌱 18h 📏 90mm" [ref=f22e488] [cursor=pointer]:
+                - /url: /berries/kebia
+                - generic [ref=f22e489]:
+                    - generic [ref=f22e490]: "#0042"
+                    - generic [ref=f22e491]: Hard
+                - img "Kebia Berry" [ref=f22e494]
+                - heading "Kebia" [level=2] [ref=f22e495]
+                - paragraph [ref=f22e496]:
+                    - generic [ref=f22e497]: 🌱 18h
+                    - generic [ref=f22e498]: 📏 90mm
+            - link "#0043 Soft Shuca Berry Shuca 🌱 18h 📏 42mm" [ref=f22e499] [cursor=pointer]:
+                - /url: /berries/shuca
+                - generic [ref=f22e500]:
+                    - generic [ref=f22e501]: "#0043"
+                    - generic [ref=f22e502]: Soft
+                - img "Shuca Berry" [ref=f22e506]
+                - heading "Shuca" [level=2] [ref=f22e507]
+                - paragraph [ref=f22e508]:
+                    - generic [ref=f22e509]: 🌱 18h
+                    - generic [ref=f22e510]: 📏 42mm
+            - link "#0044 Very Hard Coba Berry Coba 🌱 18h 📏 278mm" [ref=f22e511] [cursor=pointer]:
+                - /url: /berries/coba
+                - generic [ref=f22e512]:
+                    - generic [ref=f22e513]: "#0044"
+                    - generic [ref=f22e514]: Very Hard
+                - img "Coba Berry" [ref=f22e518]
+                - heading "Coba" [level=2] [ref=f22e519]
+                - paragraph [ref=f22e520]:
+                    - generic [ref=f22e521]: 🌱 18h
+                    - generic [ref=f22e522]: 📏 278mm
+            - link "#0045 Soft Payapa Berry Payapa 🌱 18h 📏 252mm" [ref=f22e523] [cursor=pointer]:
+                - /url: /berries/payapa
+                - generic [ref=f22e524]:
+                    - generic [ref=f22e525]: "#0045"
+                    - generic [ref=f22e526]: Soft
+                - img "Payapa Berry" [ref=f22e530]
+                - heading "Payapa" [level=2] [ref=f22e531]
+                - paragraph [ref=f22e532]:
+                    - generic [ref=f22e533]: 🌱 18h
+                    - generic [ref=f22e534]: 📏 252mm
+            - link "#0046 Very Soft Tanga Berry Tanga 🌱 18h 📏 42mm" [ref=f22e535] [cursor=pointer]:
+                - /url: /berries/tanga
+                - generic [ref=f22e536]:
+                    - generic [ref=f22e537]: "#0046"
+                    - generic [ref=f22e538]: Very Soft
+                - img "Tanga Berry" [ref=f22e542]
+                - heading "Tanga" [level=2] [ref=f22e543]
+                - paragraph [ref=f22e544]:
+                    - generic [ref=f22e545]: 🌱 18h
+                    - generic [ref=f22e546]: 📏 42mm
+            - link "#0047 Very Soft Charti Berry Charti 🌱 18h 📏 28mm" [ref=f22e547] [cursor=pointer]:
+                - /url: /berries/charti
+                - generic [ref=f22e548]:
+                    - generic [ref=f22e549]: "#0047"
+                    - generic [ref=f22e550]: Very Soft
+                - img "Charti Berry" [ref=f22e554]
+                - heading "Charti" [level=2] [ref=f22e555]
+                - paragraph [ref=f22e556]:
+                    - generic [ref=f22e557]: 🌱 18h
+                    - generic [ref=f22e558]: 📏 28mm
+            - link "#0048 Hard Kasib Berry Kasib 🌱 18h 📏 144mm" [ref=f22e559] [cursor=pointer]:
+                - /url: /berries/kasib
+                - generic [ref=f22e560]:
+                    - generic [ref=f22e561]: "#0048"
+                    - generic [ref=f22e562]: Hard
+                - img "Kasib Berry" [ref=f22e566]
+                - heading "Kasib" [level=2] [ref=f22e567]
+                - paragraph [ref=f22e568]:
+                    - generic [ref=f22e569]: 🌱 18h
+                    - generic [ref=f22e570]: 📏 144mm
+            - link "#0049 Soft Haban Berry Haban 🌱 18h 📏 23mm" [ref=f22e571] [cursor=pointer]:
+                - /url: /berries/haban
+                - generic [ref=f22e572]:
+                    - generic [ref=f22e573]: "#0049"
+                    - generic [ref=f22e574]: Soft
+                - img "Haban Berry" [ref=f22e578]
+                - heading "Haban" [level=2] [ref=f22e579]
+                - paragraph [ref=f22e580]:
+                    - generic [ref=f22e581]: 🌱 18h
+                    - generic [ref=f22e582]: 📏 23mm
+            - link "#0050 Super Hard Colbur Berry Colbur 🌱 18h 📏 39mm" [ref=f22e583] [cursor=pointer]:
+                - /url: /berries/colbur
+                - generic [ref=f22e584]:
+                    - generic [ref=f22e585]: "#0050"
+                    - generic [ref=f22e586]: Super Hard
+                - img "Colbur Berry" [ref=f22e590]
+                - heading "Colbur" [level=2] [ref=f22e591]
+                - paragraph [ref=f22e592]:
+                    - generic [ref=f22e593]: 🌱 18h
+                    - generic [ref=f22e594]: 📏 39mm
+            - link "#0051 Super Hard Babiri Berry Babiri 🌱 18h 📏 265mm" [ref=f22e595] [cursor=pointer]:
+                - /url: /berries/babiri
+                - generic [ref=f22e596]:
+                    - generic [ref=f22e597]: "#0051"
+                    - generic [ref=f22e598]: Super Hard
+                - img "Babiri Berry" [ref=f22e602]
+                - heading "Babiri" [level=2] [ref=f22e603]
+                - paragraph [ref=f22e604]:
+                    - generic [ref=f22e605]: 🌱 18h
+                    - generic [ref=f22e606]: 📏 265mm
+            - link "#0052 Very Soft Chilan Berry Chilan 🌱 18h 📏 34mm" [ref=f22e607] [cursor=pointer]:
+                - /url: /berries/chilan
+                - generic [ref=f22e608]:
+                    - generic [ref=f22e609]: "#0052"
+                    - generic [ref=f22e610]: Very Soft
+                - img "Chilan Berry" [ref=f22e614]
+                - heading "Chilan" [level=2] [ref=f22e615]
+                - paragraph [ref=f22e616]:
+                    - generic [ref=f22e617]: 🌱 18h
+                    - generic [ref=f22e618]: 📏 34mm
+            - link "#0053 Very Hard Liechi Berry Liechi 🌱 24h 📏 111mm" [ref=f22e619] [cursor=pointer]:
+                - /url: /berries/liechi
+                - generic [ref=f22e620]:
+                    - generic [ref=f22e621]: "#0053"
+                    - generic [ref=f22e622]: Very Hard
+                - img "Liechi Berry" [ref=f22e626]
+                - heading "Liechi" [level=2] [ref=f22e627]
+                - paragraph [ref=f22e628]:
+                    - generic [ref=f22e629]: 🌱 24h
+                    - generic [ref=f22e630]: 📏 111mm
+            - link "#0054 Very Hard Ganlon Berry Ganlon 🌱 24h 📏 33mm" [ref=f22e631] [cursor=pointer]:
+                - /url: /berries/ganlon
+                - generic [ref=f22e632]:
+                    - generic [ref=f22e633]: "#0054"
+                    - generic [ref=f22e634]: Very Hard
+                - img "Ganlon Berry" [ref=f22e638]
+                - heading "Ganlon" [level=2] [ref=f22e639]
+                - paragraph [ref=f22e640]:
+                    - generic [ref=f22e641]: 🌱 24h
+                    - generic [ref=f22e642]: 📏 33mm
+            - link "#0055 Very Hard Salac Berry Salac 🌱 24h 📏 95mm" [ref=f22e643] [cursor=pointer]:
+                - /url: /berries/salac
+                - generic [ref=f22e644]:
+                    - generic [ref=f22e645]: "#0055"
+                    - generic [ref=f22e646]: Very Hard
+                - img "Salac Berry" [ref=f22e650]
+                - heading "Salac" [level=2] [ref=f22e651]
+                - paragraph [ref=f22e652]:
+                    - generic [ref=f22e653]: 🌱 24h
+                    - generic [ref=f22e654]: 📏 95mm
+            - link "#0056 Very Hard Petaya Berry Petaya 🌱 24h 📏 237mm" [ref=f22e655] [cursor=pointer]:
+                - /url: /berries/petaya
+                - generic [ref=f22e656]:
+                    - generic [ref=f22e657]: "#0056"
+                    - generic [ref=f22e658]: Very Hard
+                - img "Petaya Berry" [ref=f22e662]
+                - heading "Petaya" [level=2] [ref=f22e663]
+                - paragraph [ref=f22e664]:
+                    - generic [ref=f22e665]: 🌱 24h
+                    - generic [ref=f22e666]: 📏 237mm
+            - link "#0057 Hard Apicot Berry Apicot 🌱 24h 📏 75mm" [ref=f22e667] [cursor=pointer]:
+                - /url: /berries/apicot
+                - generic [ref=f22e668]:
+                    - generic [ref=f22e669]: "#0057"
+                    - generic [ref=f22e670]: Hard
+                - img "Apicot Berry" [ref=f22e674]
+                - heading "Apicot" [level=2] [ref=f22e675]
+                - paragraph [ref=f22e676]:
+                    - generic [ref=f22e677]: 🌱 24h
+                    - generic [ref=f22e678]: 📏 75mm
+            - link "#0058 Soft Lansat Berry Lansat 🌱 24h 📏 97mm" [ref=f22e679] [cursor=pointer]:
+                - /url: /berries/lansat
+                - generic [ref=f22e680]:
+                    - generic [ref=f22e681]: "#0058"
+                    - generic [ref=f22e682]: Soft
+                - img "Lansat Berry" [ref=f22e686]
+                - heading "Lansat" [level=2] [ref=f22e687]
+                - paragraph [ref=f22e688]:
+                    - generic [ref=f22e689]: 🌱 24h
+                    - generic [ref=f22e690]: 📏 97mm
+            - link "#0059 Super Hard Starf Berry Starf 🌱 24h 📏 153mm" [ref=f22e691] [cursor=pointer]:
+                - /url: /berries/starf
+                - generic [ref=f22e692]:
+                    - generic [ref=f22e693]: "#0059"
+                    - generic [ref=f22e694]: Super Hard
+                - img "Starf Berry" [ref=f22e698]
+                - heading "Starf" [level=2] [ref=f22e699]
+                - paragraph [ref=f22e700]:
+                    - generic [ref=f22e701]: 🌱 24h
+                    - generic [ref=f22e702]: 📏 153mm
+            - link "#0060 Hard Enigma Berry Enigma 🌱 24h 📏 155mm" [ref=f22e703] [cursor=pointer]:
+                - /url: /berries/enigma
+                - generic [ref=f22e704]:
+                    - generic [ref=f22e705]: "#0060"
+                    - generic [ref=f22e706]: Hard
+                - img "Enigma Berry" [ref=f22e710]
+                - heading "Enigma" [level=2] [ref=f22e711]
+                - paragraph [ref=f22e712]:
+                    - generic [ref=f22e713]: 🌱 24h
+                    - generic [ref=f22e714]: 📏 155mm
+            - link "#0061 Soft Micle Berry Micle 🌱 24h 📏 41mm" [ref=f22e715] [cursor=pointer]:
+                - /url: /berries/micle
+                - generic [ref=f22e716]:
+                    - generic [ref=f22e717]: "#0061"
+                    - generic [ref=f22e718]: Soft
+                - img "Micle Berry" [ref=f22e722]
+                - heading "Micle" [level=2] [ref=f22e723]
+                - paragraph [ref=f22e724]:
+                    - generic [ref=f22e725]: 🌱 24h
+                    - generic [ref=f22e726]: 📏 41mm
+            - link "#0062 Super Hard Custap Berry Custap 🌱 24h 📏 267mm" [ref=f22e727] [cursor=pointer]:
+                - /url: /berries/custap
+                - generic [ref=f22e728]:
+                    - generic [ref=f22e729]: "#0062"
+                    - generic [ref=f22e730]: Super Hard
+                - img "Custap Berry" [ref=f22e734]
+                - heading "Custap" [level=2] [ref=f22e735]
+                - paragraph [ref=f22e736]:
+                    - generic [ref=f22e737]: 🌱 24h
+                    - generic [ref=f22e738]: 📏 267mm
+            - link "#0063 Soft Jaboca Berry Jaboca 🌱 24h 📏 33mm" [ref=f22e739] [cursor=pointer]:
+                - /url: /berries/jaboca
+                - generic [ref=f22e740]:
+                    - generic [ref=f22e741]: "#0063"
+                    - generic [ref=f22e742]: Soft
+                - img "Jaboca Berry" [ref=f22e746]
+                - heading "Jaboca" [level=2] [ref=f22e747]
+                - paragraph [ref=f22e748]:
+                    - generic [ref=f22e749]: 🌱 24h
+                    - generic [ref=f22e750]: 📏 33mm
+            - link "#0064 Very Soft Rowap Berry Rowap 🌱 24h 📏 52mm" [ref=f22e751] [cursor=pointer]:
+                - /url: /berries/rowap
+                - generic [ref=f22e752]:
+                    - generic [ref=f22e753]: "#0064"
+                    - generic [ref=f22e754]: Very Soft
+                - img "Rowap Berry" [ref=f22e758]
+                - heading "Rowap" [level=2] [ref=f22e759]
+                - paragraph [ref=f22e760]:
+                    - generic [ref=f22e761]: 🌱 24h
+                    - generic [ref=f22e762]: 📏 52mm
+    - contentinfo [ref=f22e763]:
+        - generic [ref=f22e764]:
+            - generic [ref=f22e765]:
+                - text: Data from
+                - link "PokeAPI" [ref=f22e766] [cursor=pointer]:
+                    - /url: https://pokeapi.co
+                - text: . Built with SvelteKit.
+            - link "View source on GitHub" [ref=f22e767] [cursor=pointer]:
+                - /url: https://github.com/AZagatti/pokedex-tw-opus-off
+                - img [ref=f22e768]
+                - text: Source

@@ -18,6 +18,19 @@
 
   let loaded = $state(false);
   let failed = $state(false);
+  let triedFallback = $state(false);
+
+  // jsDelivr occasionally 403s individual sprite files; fall back to the raw
+  // GitHub mirror before giving up and showing the placeholder.
+  const fallbackSrc = $derived(
+    src?.startsWith("https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/")
+      ? src.replace(
+          "https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/",
+          "https://raw.githubusercontent.com/PokeAPI/sprites/master/",
+        )
+      : null,
+  );
+  const activeSrc = $derived(triedFallback ? fallbackSrc : src);
 
   // Reset state when the source changes (variant switcher, list recycling).
   $effect(() => {
@@ -25,7 +38,16 @@
     void src;
     loaded = false;
     failed = false;
+    triedFallback = false;
   });
+
+  function onError() {
+    if (fallbackSrc && !triedFallback) {
+      triedFallback = true;
+    } else {
+      failed = true;
+    }
+  }
 </script>
 
 <div
@@ -37,15 +59,15 @@
     <div class="poke-img__skeleton skeleton" aria-hidden="true"></div>
   {/if}
 
-  {#if src && !failed}
+  {#if activeSrc && !failed}
     <img
-      {src}
+      src={activeSrc}
       {alt}
       loading={eager ? "eager" : "lazy"}
       decoding="async"
       draggable="false"
       onload={() => (loaded = true)}
-      onerror={() => (failed = true)}
+      onerror={onError}
     />
   {:else if failed}
     <div class="poke-img__fallback" role="img" aria-label={alt}>

@@ -47,6 +47,11 @@ export function officialArtwork(id: number): string {
   return `https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/other/official-artwork/${id}.png`;
 }
 
+/** Item sprite for a berry (e.g. "cheri" → cheri-berry.png), via the CDN. */
+export function berrySprite(name: string): string {
+  return `https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/items/${name}-berry.png`;
+}
+
 export function listPokemon(
   limit: number,
   offset: number,
