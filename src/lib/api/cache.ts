@@ -62,7 +62,11 @@ export async function cachedFetch<T>(
   try {
     return await request;
   } finally {
-    inflight.delete(url);
+    // Only clear the entry if it's still *this* request — a racing `force`
+    // call may have replaced it with a newer in-flight promise.
+    if (inflight.get(url) === request) {
+      inflight.delete(url);
+    }
   }
 }
 

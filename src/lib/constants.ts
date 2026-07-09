@@ -22,9 +22,52 @@ export const POKEMON_TYPES = [
 
 export type PokemonType = (typeof POKEMON_TYPES)[number];
 
-/** CSS custom property holding a type's brand color (defined in app.css @theme). */
+/** Canonical brand color (hex) for each type. */
+export const TYPE_COLORS: Record<string, string> = {
+  normal: "#a8a77a",
+  fire: "#ee8130",
+  water: "#6390f0",
+  electric: "#f7d02c",
+  grass: "#7ac74c",
+  ice: "#96d9d6",
+  fighting: "#c22e28",
+  poison: "#a33ea1",
+  ground: "#e2bf65",
+  flying: "#a98ff3",
+  psychic: "#f95587",
+  bug: "#a6b91a",
+  rock: "#b6a136",
+  ghost: "#735797",
+  dragon: "#6f35fc",
+  dark: "#705746",
+  steel: "#b7b7ce",
+  fairy: "#d685ad",
+};
+
 export function typeColor(type: string): string {
-  return `var(--color-poke-${type})`;
+  return TYPE_COLORS[type] ?? "#8a8f9e";
+}
+
+/** WCAG relative luminance of a #rrggbb color. */
+function luminance(hex: string): number {
+  const value = hex.replace("#", "");
+  const channels = [0, 2, 4].map((i) => {
+    const c = Number.parseInt(value.slice(i, i + 2), 16) / 255;
+    return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * channels[0] + 0.7152 * channels[1] + 0.0722 * channels[2];
+}
+
+/**
+ * Pick near-black or white text for a type badge so it meets WCAG AA contrast —
+ * white text on light types (electric, ice, ground) otherwise fails.
+ */
+export function readableTextOn(type: string): string {
+  const hex = TYPE_COLORS[type];
+  if (!hex) {
+    return "#ffffff";
+  }
+  return luminance(hex) > 0.2 ? "#17181f" : "#ffffff";
 }
 
 export interface GenerationMeta {

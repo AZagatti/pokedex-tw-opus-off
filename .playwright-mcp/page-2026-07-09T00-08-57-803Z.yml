@@ -1,0 +1,147 @@
+- generic [ref=f12e3]:
+    - banner [ref=f12e4]:
+        - generic [ref=f12e5]:
+            - link "Pokédex home" [ref=f12e6] [cursor=pointer]:
+                - /url: /
+                - generic [ref=f12e8]: Pokédex
+            - navigation "Primary" [ref=f12e9]:
+                - list [ref=f12e10]:
+                    - listitem [ref=f12e11]:
+                        - link "Pokédex" [ref=f12e12] [cursor=pointer]:
+                            - /url: /
+                            - img [ref=f12e13]
+                            - generic [ref=f12e14]: Pokédex
+                    - listitem [ref=f12e15]:
+                        - link "Berries" [ref=f12e16] [cursor=pointer]:
+                            - /url: /berries
+                            - img [ref=f12e17]
+                            - generic [ref=f12e18]: Berries
+                    - listitem [ref=f12e19]:
+                        - link "Favorites 1" [ref=f12e20] [cursor=pointer]:
+                            - /url: /favorites
+                            - img [ref=f12e21]
+                            - generic [ref=f12e22]: Favorites
+                            - generic [ref=f12e23]: "1"
+            - button "Toggle color theme" [ref=f12e24] [cursor=pointer]:
+                - img [ref=f12e25]
+    - main [ref=f12e26]:
+        - link "Back to Pokédex" [ref=f12e27] [cursor=pointer]:
+            - /url: /
+            - img [ref=f12e28]
+            - text: Back to Pokédex
+        - article [ref=f12e29]:
+            - generic [ref=f12e30]:
+                - generic [ref=f12e32]:
+                    - img "Charizard Shiny" [ref=f12e163]
+                    - group "Sprite variants" [ref=f12e36]:
+                        - button "Artwork" [ref=f12e37] [cursor=pointer]
+                        - button "Front" [ref=f12e38] [cursor=pointer]
+                        - button "Back" [ref=f12e39] [cursor=pointer]
+                        - button "Shiny" [active] [pressed] [ref=f12e40] [cursor=pointer]
+                        - button "Shiny back" [ref=f12e41] [cursor=pointer]
+                - generic [ref=f12e42]:
+                    - generic [ref=f12e43]: "#0006"
+                    - generic [ref=f12e44]:
+                        - heading "Charizard" [level=1] [ref=f12e45]
+                        - button "Add Charizard to favorites" [ref=f12e46] [cursor=pointer]:
+                            - img [ref=f12e47]
+                    - paragraph [ref=f12e48]: Flame Pokémon
+                    - generic [ref=f12e49]:
+                        - generic [ref=f12e50]: fire
+                        - generic [ref=f12e51]: flying
+                    - paragraph [ref=f12e52]: It is said that Charizard’s fire burns hotter if it has experienced harsh battles.
+                    - generic [ref=f12e53]:
+                        - generic [ref=f12e54]:
+                            - img [ref=f12e55]
+                            - generic [ref=f12e56]: Height
+                            - generic [ref=f12e57]: 1.7 m
+                        - generic [ref=f12e58]:
+                            - img [ref=f12e59]
+                            - generic [ref=f12e60]: Weight
+                            - generic [ref=f12e61]: 90.5 kg
+                        - generic [ref=f12e62]:
+                            - img [ref=f12e63]
+                            - generic [ref=f12e64]: Base XP
+                            - generic [ref=f12e65]: "240"
+                    - button "Play Charizard's cry" [ref=f12e66] [cursor=pointer]:
+                        - img [ref=f12e67]
+                        - generic [ref=f12e68]: Cry
+            - generic [ref=f12e69]:
+                - generic [ref=f12e70]:
+                    - heading "Base stats" [level=2] [ref=f12e71]
+                    - generic [ref=f12e72]:
+                        - generic [ref=f12e73]:
+                            - generic "HP" [ref=f12e74]
+                            - generic [ref=f12e75]: "78"
+                        - generic [ref=f12e78]:
+                            - generic "Attack" [ref=f12e79]: ATK
+                            - generic [ref=f12e80]: "84"
+                        - generic [ref=f12e83]:
+                            - generic "Defense" [ref=f12e84]: DEF
+                            - generic [ref=f12e85]: "78"
+                        - generic [ref=f12e88]:
+                            - generic "Sp. Atk" [ref=f12e89]: SPA
+                            - generic [ref=f12e90]: "109"
+                        - generic [ref=f12e93]:
+                            - generic "Sp. Def" [ref=f12e94]: SPD
+                            - generic [ref=f12e95]: "85"
+                        - generic [ref=f12e98]:
+                            - generic "Speed" [ref=f12e99]: SPE
+                            - generic [ref=f12e100]: "100"
+                        - generic [ref=f12e103]:
+                            - generic [ref=f12e104]: Total
+                            - generic [ref=f12e105]: "534"
+                - generic [ref=f12e106]:
+                    - heading "Abilities" [level=2] [ref=f12e107]
+                    - list [ref=f12e108]:
+                        - listitem [ref=f12e109]:
+                            - generic [ref=f12e110]: Blaze
+                        - listitem [ref=f12e111]:
+                            - generic [ref=f12e112]: Solar Power
+                            - generic [ref=f12e113]: Hidden
+                    - heading "Example moves" [level=2] [ref=f12e114]
+                    - generic [ref=f12e115]:
+                        - generic [ref=f12e116]: Mega Punch
+                        - generic [ref=f12e117]: Fire Punch
+                        - generic [ref=f12e118]: Thunder Punch
+                        - generic [ref=f12e119]: Scratch
+                        - generic [ref=f12e120]: Swords Dance
+                        - generic [ref=f12e121]: Cut
+                        - generic [ref=f12e122]: Wing Attack
+                        - generic [ref=f12e123]: Fly
+                        - generic [ref=f12e124]: Mega Kick
+                        - generic [ref=f12e125]: Headbutt
+                        - generic [ref=f12e126]: Body Slam
+                        - generic [ref=f12e127]: Take Down
+                - generic [ref=f12e128]:
+                    - heading "Evolution" [level=2] [ref=f12e129]
+                    - generic [ref=f12e130]:
+                        - link "Charmander Charmander" [ref=f12e132] [cursor=pointer]:
+                            - /url: /pokemon/charmander
+                            - img "Charmander" [ref=f12e135]
+                            - generic [ref=f12e136]: Charmander
+                        - generic [ref=f12e137]:
+                            - generic [ref=f12e138]: Lv. 16
+                            - img [ref=f12e139]
+                        - link "Charmeleon Charmeleon" [ref=f12e141] [cursor=pointer]:
+                            - /url: /pokemon/charmeleon
+                            - img "Charmeleon" [ref=f12e144]
+                            - generic [ref=f12e145]: Charmeleon
+                        - generic [ref=f12e146]:
+                            - generic [ref=f12e147]: Lv. 36
+                            - img [ref=f12e148]
+                        - link "Charizard Charizard" [ref=f12e150] [cursor=pointer]:
+                            - /url: /pokemon/charizard
+                            - img "Charizard" [ref=f12e153]
+                            - generic [ref=f12e154]: Charizard
+    - contentinfo [ref=f12e155]:
+        - generic [ref=f12e156]:
+            - generic [ref=f12e157]:
+                - text: Data from
+                - link "PokeAPI" [ref=f12e158] [cursor=pointer]:
+                    - /url: https://pokeapi.co
+                - text: . Built with SvelteKit.
+            - link "View source on GitHub" [ref=f12e159] [cursor=pointer]:
+                - /url: https://github.com/AZagatti/pokedex-tw-opus-off
+                - img [ref=f12e160]
+                - text: Source

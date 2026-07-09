@@ -34,7 +34,7 @@
     <PokemonImage src={bestSprite(pokemon)} alt={display} {eager} size="100%" />
   </div>
 
-  <h3 class="name">{display}</h3>
+  <h2 class="name">{display}</h2>
 
   <div class="types">
     {#each pokemon.types as t (t.type.name)}
@@ -96,7 +96,7 @@
   .dex {
     font-size: 0.78rem;
     font-weight: 700;
-    color: var(--text-faint);
+    color: var(--text-muted);
   }
 
   .art {

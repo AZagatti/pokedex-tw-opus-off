@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { typeColor } from "$lib/constants";
+  import { readableTextOn, typeColor } from "$lib/constants";
 
   interface Props {
     type: string;
@@ -12,9 +12,9 @@
 <span
   class="pill type-badge"
   class:sm={size === "sm"}
-  style="background: linear-gradient(135deg, {typeColor(
+  style="color: {readableTextOn(type)}; background: linear-gradient(135deg, {typeColor(
     type,
-  )}, color-mix(in srgb, {typeColor(type)} 78%, black));"
+  )}, color-mix(in srgb, {typeColor(type)} 88%, black));"
 >
   {type}
 </span>

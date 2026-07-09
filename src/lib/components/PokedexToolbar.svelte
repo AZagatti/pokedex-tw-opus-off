@@ -1,6 +1,11 @@
 <script lang="ts">
   import { ArrowUpDown, Search, X } from "@lucide/svelte";
-  import { GENERATIONS, POKEMON_TYPES, typeColor } from "$lib/constants";
+  import {
+    GENERATIONS,
+    POKEMON_TYPES,
+    readableTextOn,
+    typeColor,
+  } from "$lib/constants";
   import type { Filters, SortMode } from "$lib/pokedex";
   import { hasActiveFilters } from "$lib/pokedex";
 
@@ -22,9 +27,21 @@
 
   // Debounced search: local input mirrors filters.query with a 250ms delay.
   let searchInput = $state(filters.query);
+  let lastSynced = filters.query;
+
+  // Re-sync the visible input when filters.query changes from elsewhere
+  // (e.g. the "Clear filters" empty-state button resets the whole object).
+  $effect(() => {
+    if (filters.query !== lastSynced) {
+      searchInput = filters.query;
+      lastSynced = filters.query;
+    }
+  });
+
   $effect(() => {
     const value = searchInput;
     const timer = setTimeout(() => {
+      lastSynced = value;
       filters.query = value;
     }, 250);
     return () => clearTimeout(timer);
@@ -106,7 +123,7 @@
         type="button"
         class="type-chip"
         class:on={filters.types.includes(type)}
-        style="--tc: {typeColor(type)};"
+        style="--tc: {typeColor(type)}; --tc-text: {readableTextOn(type)};"
         onclick={() => toggleType(type)}
         aria-pressed={filters.types.includes(type)}
       >
@@ -247,9 +264,8 @@
   }
   .type-chip.on {
     background: var(--tc);
-    color: #fff;
+    color: var(--tc-text);
     border-color: var(--tc);
-    text-shadow: 0 1px 1px rgb(0 0 0 / 0.25);
   }
 
   .meta {

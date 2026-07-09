@@ -1,5 +1,5 @@
 import { idFromUrl } from "./api/client";
-import type { NamedResource, Pokemon } from "./api/schemas";
+import type { EvolutionLink, NamedResource, Pokemon } from "./api/schemas";
 import { baseStatTotal } from "./format";
 
 /** A lightweight national-dex entry (name + id), derived from the list API. */
@@ -76,4 +76,36 @@ export function hasActiveFilters(filters: Filters): boolean {
     filters.generation !== null ||
     filters.types.length > 0
   );
+}
+
+export interface EvolutionStageEntry {
+  name: string;
+  minLevel: number | null;
+  trigger: string | null;
+  item: string | null;
+}
+
+/**
+ * Flatten an evolution chain into breadth-first stages. Each stage is the set
+ * of species at that evolution depth, so linear chains render as columns and
+ * branching chains (e.g. Eevee) show all options side by side.
+ */
+export function evolutionStages(root: EvolutionLink): EvolutionStageEntry[][] {
+  const stages: EvolutionStageEntry[][] = [];
+  let current: EvolutionLink[] = [root];
+  while (current.length > 0) {
+    stages.push(
+      current.map((link) => {
+        const [detail] = link.evolution_details;
+        return {
+          name: link.species.name,
+          minLevel: detail?.min_level ?? null,
+          trigger: detail?.trigger?.name ?? null,
+          item: detail?.item?.name ?? null,
+        };
+      })
+    );
+    current = current.flatMap((link) => link.evolves_to);
+  }
+  return stages;
 }

@@ -1,0 +1,242 @@
+- generic [ref=f15e3]:
+    - banner [ref=f15e4]:
+        - generic [ref=f15e5]:
+            - link "Pokédex home" [ref=f15e6] [cursor=pointer]:
+                - /url: /
+                - generic [ref=f15e8]: Pokédex
+            - navigation "Primary" [ref=f15e9]:
+                - list [ref=f15e10]:
+                    - listitem [ref=f15e11]:
+                        - link "Pokédex" [ref=f15e12] [cursor=pointer]:
+                            - /url: /
+                            - img [ref=f15e13]
+                            - generic [ref=f15e14]: Pokédex
+                    - listitem [ref=f15e15]:
+                        - link "Berries" [ref=f15e16] [cursor=pointer]:
+                            - /url: /berries
+                            - img [ref=f15e17]
+                            - generic [ref=f15e18]: Berries
+                    - listitem [ref=f15e19]:
+                        - link "Favorites 1" [ref=f15e20] [cursor=pointer]:
+                            - /url: /favorites
+                            - img [ref=f15e21]
+                            - generic [ref=f15e22]: Favorites
+                            - generic [ref=f15e23]: "1"
+            - button "Toggle color theme" [ref=f15e24] [cursor=pointer]:
+                - img [ref=f15e25]
+    - main [ref=f15e26]:
+        - generic [ref=f15e27]:
+            - heading "Pokédex" [level=1] [ref=f15e28]
+            - paragraph [ref=f15e29]: Every Pokémon, searchable and filterable — powered by the PokeAPI, built with SvelteKit.
+        - generic [ref=f15e30]:
+            - generic [ref=f15e31]:
+                - generic [ref=f15e32]:
+                    - img [ref=f15e33]
+                    - searchbox "Search Pokémon by name" [active] [ref=f15e34]: pika
+                    - button "Clear search" [ref=f15e35] [cursor=pointer]:
+                        - img [ref=f15e36]
+                - generic [ref=f15e37]:
+                    - generic [ref=f15e38]: Filter by generation
+                    - combobox "Filter by generation" [ref=f15e39] [cursor=pointer]:
+                        - option "All gens" [selected]
+                        - option "Gen I · Kanto"
+                        - option "Gen II · Johto"
+                        - option "Gen III · Hoenn"
+                        - option "Gen IV · Sinnoh"
+                        - option "Gen V · Unova"
+                        - option "Gen VI · Kalos"
+                        - option "Gen VII · Alola"
+                        - option "Gen VIII · Galar"
+                        - option "Gen IX · Paldea"
+                - button "Change sort order" [ref=f15e40] [cursor=pointer]:
+                    - img [ref=f15e41]
+                    - generic [ref=f15e42]: Dex №
+            - group "Filter by type" [ref=f15e43]:
+                - button "normal" [ref=f15e44] [cursor=pointer]
+                - button "fire" [ref=f15e45] [cursor=pointer]
+                - button "water" [ref=f15e46] [cursor=pointer]
+                - button "electric" [ref=f15e47] [cursor=pointer]
+                - button "grass" [ref=f15e48] [cursor=pointer]
+                - button "ice" [ref=f15e49] [cursor=pointer]
+                - button "fighting" [ref=f15e50] [cursor=pointer]
+                - button "poison" [ref=f15e51] [cursor=pointer]
+                - button "ground" [ref=f15e52] [cursor=pointer]
+                - button "flying" [ref=f15e53] [cursor=pointer]
+                - button "psychic" [ref=f15e54] [cursor=pointer]
+                - button "bug" [ref=f15e55] [cursor=pointer]
+                - button "rock" [ref=f15e56] [cursor=pointer]
+                - button "ghost" [ref=f15e57] [cursor=pointer]
+                - button "dragon" [ref=f15e58] [cursor=pointer]
+                - button "dark" [ref=f15e59] [cursor=pointer]
+                - button "steel" [ref=f15e60] [cursor=pointer]
+                - button "fairy" [ref=f15e61] [cursor=pointer]
+            - generic [ref=f15e62]:
+                - generic [ref=f15e63]: 17 Pokémon of 1351
+                - button "Clear filters" [ref=f15e447] [cursor=pointer]:
+                    - img [ref=f15e448]
+                    - text: Clear filters
+        - generic [ref=f15e64]:
+            - link "#0025 Add Pikachu to favorites Pikachu Pikachu electric" [ref=f15e366] [cursor=pointer]:
+                - /url: /pokemon/pikachu
+                - generic [ref=f15e368]:
+                    - generic [ref=f15e369]: "#0025"
+                    - button "Add Pikachu to favorites" [ref=f15e370]:
+                        - img [ref=f15e371]
+                - img "Pikachu" [ref=f15e374]
+                - heading "Pikachu" [level=2] [ref=f15e375]
+                - generic [ref=f15e377]: electric
+            - link "#10080 Add Pikachu Rock Star to favorites Pikachu Rock Star Pikachu Rock Star electric" [ref=f15e449] [cursor=pointer]:
+                - /url: /pokemon/pikachu-rock-star
+                - generic [ref=f15e451]:
+                    - generic [ref=f15e452]: "#10080"
+                    - button "Add Pikachu Rock Star to favorites" [ref=f15e453]:
+                        - img [ref=f15e454]
+                - img "Pikachu Rock Star" [ref=f15e457]
+                - heading "Pikachu Rock Star" [level=2] [ref=f15e458]
+                - generic [ref=f15e460]: electric
+            - link "#10081 Add Pikachu Belle to favorites Pikachu Belle Pikachu Belle electric" [ref=f15e461] [cursor=pointer]:
+                - /url: /pokemon/pikachu-belle
+                - generic [ref=f15e463]:
+                    - generic [ref=f15e464]: "#10081"
+                    - button "Add Pikachu Belle to favorites" [ref=f15e465]:
+                        - img [ref=f15e466]
+                - img "Pikachu Belle" [ref=f15e469]
+                - heading "Pikachu Belle" [level=2] [ref=f15e470]
+                - generic [ref=f15e472]: electric
+            - link "#10082 Add Pikachu Pop Star to favorites Pikachu Pop Star Pikachu Pop Star electric" [ref=f15e473] [cursor=pointer]:
+                - /url: /pokemon/pikachu-pop-star
+                - generic [ref=f15e475]:
+                    - generic [ref=f15e476]: "#10082"
+                    - button "Add Pikachu Pop Star to favorites" [ref=f15e477]:
+                        - img [ref=f15e478]
+                - img "Pikachu Pop Star" [ref=f15e481]
+                - heading "Pikachu Pop Star" [level=2] [ref=f15e482]
+                - generic [ref=f15e484]: electric
+            - link "#10083 Add Pikachu Phd to favorites Pikachu Phd Pikachu Phd electric" [ref=f15e485] [cursor=pointer]:
+                - /url: /pokemon/pikachu-phd
+                - generic [ref=f15e487]:
+                    - generic [ref=f15e488]: "#10083"
+                    - button "Add Pikachu Phd to favorites" [ref=f15e489]:
+                        - img [ref=f15e490]
+                - img "Pikachu Phd" [ref=f15e493]
+                - heading "Pikachu Phd" [level=2] [ref=f15e494]
+                - generic [ref=f15e496]: electric
+            - link "#10084 Add Pikachu Libre to favorites Pikachu Libre Pikachu Libre electric" [ref=f15e497] [cursor=pointer]:
+                - /url: /pokemon/pikachu-libre
+                - generic [ref=f15e499]:
+                    - generic [ref=f15e500]: "#10084"
+                    - button "Add Pikachu Libre to favorites" [ref=f15e501]:
+                        - img [ref=f15e502]
+                - img "Pikachu Libre" [ref=f15e505]
+                - heading "Pikachu Libre" [level=2] [ref=f15e506]
+                - generic [ref=f15e508]: electric
+            - link "#10085 Add Pikachu Cosplay to favorites Pikachu Cosplay Pikachu Cosplay electric" [ref=f15e509] [cursor=pointer]:
+                - /url: /pokemon/pikachu-cosplay
+                - generic [ref=f15e511]:
+                    - generic [ref=f15e512]: "#10085"
+                    - button "Add Pikachu Cosplay to favorites" [ref=f15e513]:
+                        - img [ref=f15e514]
+                - img "Pikachu Cosplay" [ref=f15e517]
+                - heading "Pikachu Cosplay" [level=2] [ref=f15e518]
+                - generic [ref=f15e520]: electric
+            - link "#10094 Add Pikachu Original Cap to favorites Pikachu Original Cap Pikachu Original Cap electric" [ref=f15e521] [cursor=pointer]:
+                - /url: /pokemon/pikachu-original-cap
+                - generic [ref=f15e523]:
+                    - generic [ref=f15e524]: "#10094"
+                    - button "Add Pikachu Original Cap to favorites" [ref=f15e525]:
+                        - img [ref=f15e526]
+                - img "Pikachu Original Cap" [ref=f15e529]
+                - heading "Pikachu Original Cap" [level=2] [ref=f15e530]
+                - generic [ref=f15e532]: electric
+            - link "#10095 Add Pikachu Hoenn Cap to favorites Pikachu Hoenn Cap Pikachu Hoenn Cap electric" [ref=f15e533] [cursor=pointer]:
+                - /url: /pokemon/pikachu-hoenn-cap
+                - generic [ref=f15e535]:
+                    - generic [ref=f15e536]: "#10095"
+                    - button "Add Pikachu Hoenn Cap to favorites" [ref=f15e537]:
+                        - img [ref=f15e538]
+                - img "Pikachu Hoenn Cap" [ref=f15e541]
+                - heading "Pikachu Hoenn Cap" [level=2] [ref=f15e542]
+                - generic [ref=f15e544]: electric
+            - link "#10096 Add Pikachu Sinnoh Cap to favorites Pikachu Sinnoh Cap Pikachu Sinnoh Cap electric" [ref=f15e545] [cursor=pointer]:
+                - /url: /pokemon/pikachu-sinnoh-cap
+                - generic [ref=f15e547]:
+                    - generic [ref=f15e548]: "#10096"
+                    - button "Add Pikachu Sinnoh Cap to favorites" [ref=f15e549]:
+                        - img [ref=f15e550]
+                - img "Pikachu Sinnoh Cap" [ref=f15e553]
+                - heading "Pikachu Sinnoh Cap" [level=2] [ref=f15e554]
+                - generic [ref=f15e556]: electric
+            - link "#10097 Add Pikachu Unova Cap to favorites Pikachu Unova Cap Pikachu Unova Cap electric" [ref=f15e557] [cursor=pointer]:
+                - /url: /pokemon/pikachu-unova-cap
+                - generic [ref=f15e559]:
+                    - generic [ref=f15e560]: "#10097"
+                    - button "Add Pikachu Unova Cap to favorites" [ref=f15e561]:
+                        - img [ref=f15e562]
+                - img "Pikachu Unova Cap" [ref=f15e565]
+                - heading "Pikachu Unova Cap" [level=2] [ref=f15e566]
+                - generic [ref=f15e568]: electric
+            - link "#10098 Add Pikachu Kalos Cap to favorites Pikachu Kalos Cap Pikachu Kalos Cap electric" [ref=f15e569] [cursor=pointer]:
+                - /url: /pokemon/pikachu-kalos-cap
+                - generic [ref=f15e571]:
+                    - generic [ref=f15e572]: "#10098"
+                    - button "Add Pikachu Kalos Cap to favorites" [ref=f15e573]:
+                        - img [ref=f15e574]
+                - img "Pikachu Kalos Cap" [ref=f15e577]
+                - heading "Pikachu Kalos Cap" [level=2] [ref=f15e578]
+                - generic [ref=f15e580]: electric
+            - link "#10099 Add Pikachu Alola Cap to favorites Pikachu Alola Cap Pikachu Alola Cap electric" [ref=f15e581] [cursor=pointer]:
+                - /url: /pokemon/pikachu-alola-cap
+                - generic [ref=f15e583]:
+                    - generic [ref=f15e584]: "#10099"
+                    - button "Add Pikachu Alola Cap to favorites" [ref=f15e585]:
+                        - img [ref=f15e586]
+                - img "Pikachu Alola Cap" [ref=f15e589]
+                - heading "Pikachu Alola Cap" [level=2] [ref=f15e590]
+                - generic [ref=f15e592]: electric
+            - link "#10148 Add Pikachu Partner Cap to favorites Pikachu Partner Cap Pikachu Partner Cap electric" [ref=f15e593] [cursor=pointer]:
+                - /url: /pokemon/pikachu-partner-cap
+                - generic [ref=f15e595]:
+                    - generic [ref=f15e596]: "#10148"
+                    - button "Add Pikachu Partner Cap to favorites" [ref=f15e597]:
+                        - img [ref=f15e598]
+                - img "Pikachu Partner Cap" [ref=f15e601]
+                - heading "Pikachu Partner Cap" [level=2] [ref=f15e602]
+                - generic [ref=f15e604]: electric
+            - link "#10158 Add Pikachu Starter to favorites Pikachu Starter Pikachu Starter electric" [ref=f15e605] [cursor=pointer]:
+                - /url: /pokemon/pikachu-starter
+                - generic [ref=f15e607]:
+                    - generic [ref=f15e608]: "#10158"
+                    - button "Add Pikachu Starter to favorites" [ref=f15e609]:
+                        - img [ref=f15e610]
+                - img "Pikachu Starter" [ref=f15e613]
+                - heading "Pikachu Starter" [level=2] [ref=f15e614]
+                - generic [ref=f15e616]: electric
+            - link "#10160 Add Pikachu World Cap to favorites Pikachu World Cap Pikachu World Cap electric" [ref=f15e617] [cursor=pointer]:
+                - /url: /pokemon/pikachu-world-cap
+                - generic [ref=f15e619]:
+                    - generic [ref=f15e620]: "#10160"
+                    - button "Add Pikachu World Cap to favorites" [ref=f15e621]:
+                        - img [ref=f15e622]
+                - img "Pikachu World Cap" [ref=f15e625]
+                - heading "Pikachu World Cap" [level=2] [ref=f15e626]
+                - generic [ref=f15e628]: electric
+            - link "#10199 Add Pikachu Gmax to favorites Pikachu Gmax Pikachu Gmax electric" [ref=f15e629] [cursor=pointer]:
+                - /url: /pokemon/pikachu-gmax
+                - generic [ref=f15e631]:
+                    - generic [ref=f15e632]: "#10199"
+                    - button "Add Pikachu Gmax to favorites" [ref=f15e633]:
+                        - img [ref=f15e634]
+                - img "Pikachu Gmax" [ref=f15e637]
+                - heading "Pikachu Gmax" [level=2] [ref=f15e638]
+                - generic [ref=f15e640]: electric
+    - contentinfo [ref=f15e439]:
+        - generic [ref=f15e440]:
+            - generic [ref=f15e441]:
+                - text: Data from
+                - link "PokeAPI" [ref=f15e442] [cursor=pointer]:
+                    - /url: https://pokeapi.co
+                - text: . Built with SvelteKit.
+            - link "View source on GitHub" [ref=f15e443] [cursor=pointer]:
+                - /url: https://github.com/AZagatti/pokedex-tw-opus-off
+                - img [ref=f15e444]
+                - text: Source

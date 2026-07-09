@@ -38,6 +38,8 @@
   .fav {
     display: grid;
     place-items: center;
+    min-width: 40px;
+    min-height: 40px;
     padding: 0.4rem;
     border-radius: 999px;
     background: color-mix(in srgb, var(--bg-elevated) 80%, transparent);

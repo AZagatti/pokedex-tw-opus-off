@@ -170,8 +170,8 @@
   .theme-toggle {
     display: grid;
     place-items: center;
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     border-radius: 0.7rem;
     border: 1px solid var(--border);
     background: var(--bg-elevated);
